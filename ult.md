@@ -1286,7 +1286,271 @@ Možná vztahy na DSka, ALG a jakési PJP, ZDS. Něco malinko z SWI stuff.
 * Private declaration is accessible only to the class itself.
 
 ### 1.4) ALG
+Proč studovat algoritmy?
+* Profesionální vývojář/informatik by měl znát standardní algoritmy pro řešení základních problémů, měl by umět navrhovat nové algoritmy a analyzovat efektivitu algoritmů.
+* Algoritmy vedou k rozvoji analytického myšlení – jde o nalezení přesného a formálního postupu jak problém řešit.
+* Jde o obecně použitelný mentální nástroj – člověk problému dostatečně nerozumí do té doby, dokud ho nedokáže vysvětlit někomu jinému, neřkuli vysvětlit ho počítači.
+* Schopnost formalizovat řešení vede k daleko hlubšímu pochopení problematiky, než kdybychom se jednoduše pokusili řešit problém řekněme ad-hoc způsobem.
 
+Ukázka algoritmu
+* Tři algoritmy pro řešení téhož problému – nalezení největšího společného dělitele dvou celých čísel.
+
+Demonstrace několika důležitých skutečností:
+* dodržení požadavku jednoznačnosti instrukcí,
+* rozsah vstupních hodnot je nutné přesně specifikovat,
+* ten samý algoritmus můžeme reprezentovat několika různými způsoby,
+* pro řešení jednoho problému může existovat více algoritmů a:
+* algoritmy řešící stejný problém mohou být založeny na zcela rozdílných myšlenkách, principech a mohou se výrazně lišit v rychlosti řešení daného problému.
+
+Největší společný dělitel (NSD, GCD)
+* Mějme dvě nezáporná celá čísla m a n, z nichž aspoň jedno je navíc různé od nuly.
+* Největší společný dělitel gcd(m, n) definujeme jako největší celé číslo, které dělí obě čísla m a n beze zbytku.
+* Algoritmus pro jeho nalezení popsal v knize „Základy“ Euklides z Alexandrie zhruba ve třetím století před naším letopočtem.
+
+NSD – Euklidův algoritmus
+Algoritmus je založen na opakovaném aplikování vztahu gcd(m, n) = gcd(n, m mod n), (1) dokud zbytek m mod n není roven 0. Protože gcd(m, 0) = m, je poslední hodnota m rovna hledanému největšímu společnému děliteli.
+
+Techniky návrhu algoritmů (pokrač.)
+Přínosnost technik návrhu algoritmů poskytují návod, jak navrhovat algoritmy pro nové problémy, pro které není znám uspokojivý algoritmus, a umožňují přehledně klasifikovat nejrůznější algoritmy podle jejich základní myšlenky.
+
+Techniky návrhu algoritmů (pokrač.)
+Mějme však na paměti, že
+* návrh konkrétního algoritmu pro řešení konkrétního problému může být velice náročným úkolem,
+* ne všechny techniky návrhu algoritmu lze aplikovat na konkrétní problém, někdy je nutné techniky kombinovat,
+* může být obtížné rozpoznat na jaké technice návrhu je algoritmus založen,
+* i pokud je technika jasná, sestavení algoritmu často vyžaduje netriviální úsilí a vynalézavost, avšak
+* s přibývající vývojářovou praxí se vše stává snazší a snazší, ale zřídkakdy snadné.
+
+Techniky návrhu algoritmů (pokrač.)
+Význam datových struktur
+* vhodná datová struktura má zásadní význam pro navrhovaný algoritmus – Eratosthenovo síto versus spojový seznam
+* některé z technik návrhu algoritmů silně závisí na struktuře nebo na restrukturalizaci dat určujících instanci řešeného problému
+* Niklaus Wirth: „Algorithms + Data Structures = Programs“
+
+Metody zápisu algoritmu při jeho návrhu
+Přirozený jazyk
+* nemusí jít o písemný záznam – ústně formulovaná myšlenka
+* možné nejednoznačnosti – extrémní případ „Ženu holí stroj.“
+* schopnost precizně formulovat myšlenky, formulovat je logicky správně, definovat pojmy popisujících problém, pojmy zařazovat do myšlenkového schématu atd.
+
+Metody zápisu algoritmu při jeho návrhu (pokrač.)
+Pseudokód
+* směs přirozeného jazyka a konstrukcí podobných programovacím jazykům.
+* obvykle přesnější a stručnější než přirozený jazyk
+* stručnější zápis navrhovaného algoritmu
+* existuje množství navzájem podobných „dialektů“ pseudokódu
+
+Metody zápisu algoritmu při jeho návrhu (pokrač.)
+Programovací jazyk
+* další možný způsob zápisu
+* tento zápis považován spíše za implementaci
+![image](https://hackmd.io/_uploads/BkKl9tmgze.png)
+![image](https://hackmd.io/_uploads/Sk2gqt7lfl.png)
+![image](https://hackmd.io/_uploads/HJlZ9YXgfx.png)
+![image](https://hackmd.io/_uploads/HJMbqtQgzl.png)
+![image](https://hackmd.io/_uploads/ByHb5FmeGe.png)
+![image](https://hackmd.io/_uploads/SydZcKXxGg.png)
+![image](https://hackmd.io/_uploads/B1jW9Y7xMg.png)
+![image](https://hackmd.io/_uploads/S16W5t7lMl.png)
+![image](https://hackmd.io/_uploads/SJeGqKmlGg.png)
+![image](https://hackmd.io/_uploads/BkXGctmgGg.png)
+Efektivita implementace (pokrač.)
+* Hledání stále lepšího a lepšího algoritmu zajímavé mentální dobrodružství...
+* Otázkou je kdy přestat. Dokonalost je drahý luxus. Inženýrský přístup – zdroje alokované pro projekt.
+* Akademická otázka optimality algoritmu: „Jaká je nejmenší možná složitost jakéhokoliv algoritmu, který vyřeší daný problém?“
+* Například sekvenční algoritmus pro třídění pole s n prvky – minimálně n log2 n porovnání.
+* Lze každý problém řešit algoritmem? Nerozhodnutelné
+problémy – nelze je řešit jakýmkoliv algoritmem.
+
+Efektivita implementace (pokrač.)
+* Naštěstí většinu problémů z praktického života lze
+algoritmicky řešit. Dobrý algoritmus je výsledkem opakovaného úsilí a několikanásobného přepracovávání.
+![image](https://hackmd.io/_uploads/r1AQqtXlMe.png)
+![image](https://hackmd.io/_uploads/r1WVqt7eMe.png)
+![image](https://hackmd.io/_uploads/rk7N5F7gGx.png)
+![image](https://hackmd.io/_uploads/HkUN5tmgfg.png)
+![image](https://hackmd.io/_uploads/Skq45KQgzl.png)
+![image](https://hackmd.io/_uploads/HyR4qYQgGx.png)
+![image](https://hackmd.io/_uploads/Sylr5Kmlze.png)
+![image](https://hackmd.io/_uploads/S1eU5FXgfl.png)
+![image](https://hackmd.io/_uploads/HJXUcFQeGx.png)
+![image](https://hackmd.io/_uploads/SkULcFmxMx.png)
+![image](https://hackmd.io/_uploads/Hkvv9tXgMx.png)
+![image](https://hackmd.io/_uploads/Hy5v5Kmgzx.png)
+![image](https://hackmd.io/_uploads/Bk3DqK7eMx.png)
+![image](https://hackmd.io/_uploads/ry1O9FmlGl.png)
+![image](https://hackmd.io/_uploads/HyzdcK7xGl.png)
+![image](https://hackmd.io/_uploads/r1H_qFQefg.png)
+![image](https://hackmd.io/_uploads/SJuu5FQeGl.png)
+![image](https://hackmd.io/_uploads/Hk5_5F7gfe.png)
+![image](https://hackmd.io/_uploads/rJ0_5YXgGl.png)
+![image](https://hackmd.io/_uploads/S1ZYctmgfe.png)
+![image](https://hackmd.io/_uploads/S1N0hKXlGx.png)
+![image](https://hackmd.io/_uploads/Hyw0hKXlfx.png)
+![image](https://hackmd.io/_uploads/B1FA2KQgGe.png)
+![image](https://hackmd.io/_uploads/B1CC3FQeGe.png)
+![image](https://hackmd.io/_uploads/SJlyTF7gGg.png)
+![image](https://hackmd.io/_uploads/ryX1aFQgMe.png)
+![image](https://hackmd.io/_uploads/BkBy6tmxGl.png)
+![image](https://hackmd.io/_uploads/SJdJ6Kmlfx.png)
+![image](https://hackmd.io/_uploads/rJs1pY7eMl.png)
+![image](https://hackmd.io/_uploads/BkAJpYXlfe.png)
+![image](https://hackmd.io/_uploads/SJBl6KXezl.png)
+![image](https://hackmd.io/_uploads/rJuxpKmlGg.png)
+![image](https://hackmd.io/_uploads/HJjxat7lMe.png)
+![image](https://hackmd.io/_uploads/SyplTFXlfx.png)
+![image](https://hackmd.io/_uploads/rJJW6K7lMx.png)
+![image](https://hackmd.io/_uploads/BJz-6tXeze.png)
+![image](https://hackmd.io/_uploads/ryEWpFXgGl.png)
+![image](https://hackmd.io/_uploads/HkvZTK7eGl.png)
+![image](https://hackmd.io/_uploads/rJYZTKmeGg.png)
+![image](https://hackmd.io/_uploads/Skn-6Ymxzx.png)
+![image](https://hackmd.io/_uploads/rJWzat7lfl.png)
+![image](https://hackmd.io/_uploads/S1NGaYmxGg.png)
+Analýza algoritmů
+Co analyzovat?
+* správnost
+* časová složitost
+* prostorová složitost
+* optimalita... možné přístupy
+* empirický a:
+* teoretický
+
+Časová a prostorová složitost algoritmu
+* Časová složitost – jak dlouho algoritmus bude pracovat.
+* Prostorová složitost – kolik paměti bude algoritmus potřebovat navíc než je samotné uložení dat.
+* Dříve byly oba zdroje kritické.
+* Díky pokroku ve výpočetní technice je paměti relativně dost.
+* Budeme zkoumat časovou složitost – tady lze dosáhnout významného pokroku.
+* Ukazuje se, že prostorovou složitost lze zkoumat stejným aparátem jako časovou
+
+Měření velikosti vstupu
+* Triviální pozorování – větší data algoritmus obvykle zpracovává déle.
+* Zavedeme parametr n označující velikost vstupních dat, který představuje například:
+* hledání v seznamu, poli – délka pole
+* vyhodnocení polynomu p(x) = an xn + ⋯ + a1 x + a0 v bodě x – stupeň polynomu
+* násobení matic typu n × n – rozměr matice. Skutečný počet čísel na vstupu je ale n2, což je ale pořád závislé na n
+* kontrola pravopisu – počet znaků nebo počet slov, podle toho s čím algoritmus pracuje
+
+Měření velikosti vstupu (pokrač.)
+* test prvočíselnosti – vstupem je vždy jedno číslo (?!) a, doba běhu závisí na velikosti čísla (srovnej test 23 a 2 64), velikostí vstupu bude počet bitů nutných k zápisu čísla
+n = ⌊log2 a⌋ + 1 (1)
+* grafové úlohy – počet vrcholů a/nebo počet hran – zde už
+jsou dva parametry
+
+Empirické měření složitosti
+* Zadáme vhodná (?) vstupní data a změříme dobu běhu programu v obvyklých jednotkách času.
+* Nevýhody:
+* Závislost na konkrétním HW, způsobu implementace, kompilátoru.
+* Chceme měřit složitost algoritmů – nemáme prostředky pro zachycení výše uvedených vlivů.
+* Vývoj HW – znamená to, že se algoritmy zrychlují? Ne, ty zůstávají stejné.
+* Počet operací provedených programem lze obtížné zjistit.
+* Chceme se obejít bez implementace – zkoumáme přece algoritmy.
+
+Amortizovaná složitost
+* Nezkoumáme jeden, izolovaný, běh algoritmu, ale zkoumáme „sadu“ běhů s různými vstupy stejné velikosti.
+* Zajímá nás celkový počet operací za sadu.
+* Počet operací pro jeden vstup ze sady může být sice vysoký, ale je vyvážen, „amortizován“ výrazně menším počtem operací pro další vstupy ze sady.
+* Například jeden ze vstupů způsobí rozsáhlou změnu v datové struktuře a díky tomu zpracování dalších vstupů proběhne snadněji.
+* V průmyslu je například nákup drahého stroje amortizován levnější výrobou výrobku.
+![image](https://hackmd.io/_uploads/SJGETKXgzl.png)
+![image](https://hackmd.io/_uploads/HJN46FXgfx.png)
+![image](https://hackmd.io/_uploads/Skv4TK7eGx.png)
+![image](https://hackmd.io/_uploads/HJtNTKXeGl.png)
+![image](https://hackmd.io/_uploads/BJnETtXefg.png)
+![image](https://hackmd.io/_uploads/ry0ETtXxfl.png)
+![image](https://hackmd.io/_uploads/HJWBTFQxzl.png)
+![image](https://hackmd.io/_uploads/SkmSaYmgzx.png)
+![image](https://hackmd.io/_uploads/B1IHTF7xMg.png)
+![image](https://hackmd.io/_uploads/rydr6KQxfe.png)
+![image](https://hackmd.io/_uploads/HygZyc7gzx.png)
+![image](https://hackmd.io/_uploads/r1QWy5mxMe.png)
+![image](https://hackmd.io/_uploads/BJrZyc7lMx.png)
+![image](https://hackmd.io/_uploads/SJ_-J9XeMx.png)
+![image](https://hackmd.io/_uploads/Hkc-1c7eMl.png)
+![image](https://hackmd.io/_uploads/ry2W1qQgfe.png)
+![image](https://hackmd.io/_uploads/Hy1Gy5Qlfl.png)
+![image](https://hackmd.io/_uploads/SyWGJ5QgMg.png)
+![image](https://hackmd.io/_uploads/SJUmJqXlGl.png)
+![image](https://hackmd.io/_uploads/r1_7157eMg.png)
+![image](https://hackmd.io/_uploads/B1EV15mlMe.png)
+![image](https://hackmd.io/_uploads/rkL4kcmgze.png)
+![image](https://hackmd.io/_uploads/HkKVk9XxMe.png)
+![image](https://hackmd.io/_uploads/r124k5XxMl.png)
+![image](https://hackmd.io/_uploads/r16NJcXgzg.png)
+![image](https://hackmd.io/_uploads/rkxHJc7gMg.png)
+![image](https://hackmd.io/_uploads/HyXHJ5mxfe.png)
+![image](https://hackmd.io/_uploads/HyBBk9QxMx.png)
+![image](https://hackmd.io/_uploads/HkdBycQxGx.png)
+![image](https://hackmd.io/_uploads/H15rk9QxMe.png)
+![image](https://hackmd.io/_uploads/S1A21qmlMx.png)
+![image](https://hackmd.io/_uploads/B1eTyq7lze.png)
+![image](https://hackmd.io/_uploads/B1mpkcQgMx.png)
+![image](https://hackmd.io/_uploads/By8aJ97lMx.png)
+![image](https://hackmd.io/_uploads/Sk_aJq7ezg.png)
+![image](https://hackmd.io/_uploads/HyjT19QeMg.png)
+![image](https://hackmd.io/_uploads/B10TJ97xMe.png)
+![image](https://hackmd.io/_uploads/r1eRkq7xMl.png)
+![image](https://hackmd.io/_uploads/HJXAk97xGg.png)
+![image](https://hackmd.io/_uploads/HJIRJ5mefl.png)
+![image](https://hackmd.io/_uploads/HJlJgcmlMg.png)
+![image](https://hackmd.io/_uploads/B1Xyec7lMg.png)
+![image](https://hackmd.io/_uploads/rk8kxqXeMg.png)
+![image](https://hackmd.io/_uploads/ByYyxqmezg.png)
+![image](https://hackmd.io/_uploads/SJ21l5XxGl.png)
+![image](https://hackmd.io/_uploads/BJyxgcmezx.png)
+![image](https://hackmd.io/_uploads/HyWle5mlMg.png)
+![image](https://hackmd.io/_uploads/r1Belc7gzx.png)
+https://i.imgur.com/51Pe7dB.png
+TODO chybí uplne prohledavani, travelling salesman, batoh a pruchod grafu do sirky a hloubky DALE 30 images <br />
+https://i.imgur.com/zm7k11p.png
+https://i.imgur.com/82tE79a.png
+https://i.imgur.com/z0rLoln.png
+https://i.imgur.com/ohU6svw.png
+https://i.imgur.com/JKcf8hk.png
+https://i.imgur.com/9VMizot.png
+https://i.imgur.com/xPVkBu7.png
+https://i.imgur.com/bNVxHAc.png
+https://i.imgur.com/yWet1FT.png
+https://i.imgur.com/b5nspUU.png
+https://i.imgur.com/v0uxFnj.png
+https://i.imgur.com/tiYqXgC.png
+https://i.imgur.com/Q6muOdo.png
+https://i.imgur.com/DnwIwax.png
+https://i.imgur.com/fn9jB2W.png
+https://i.imgur.com/gnmi4D5.png
+https://i.imgur.com/ltUsGJl.png
+https://i.imgur.com/cksNcPl.png
+https://i.imgur.com/aM1dEJg.png
+https://i.imgur.com/oXKdoyL.png
+https://i.imgur.com/n842BlC.png
+https://i.imgur.com/ATuDmSY.png
+https://i.imgur.com/Us9tMkO.png
+https://i.imgur.com/wCFIXeq.png
+https://i.imgur.com/oKRwgCo.png
+https://i.imgur.com/s89098y.png
+https://i.imgur.com/Gz5Ws5Q.png
+TODO chybi sniz a vyres vkladanim, topologicke reseni DALE 3 images <br />
+https://i.imgur.com/pkK3FGe.png
+https://i.imgur.com/XBrHHqM.png
+https://i.imgur.com/2h1h7Tc.png
+TODO chybi rozdel a panuj nejblizsi dvojice bodu a konvexni obal mnozin, master theorem a 78 images <br />
+https://i.imgur.com/n79DdCr.png
+https://i.imgur.com/QRtyMad.png
+https://i.imgur.com/tWMJ8Wj.png
+https://i.imgur.com/1b2nEoK.png
+https://i.imgur.com/sjlNMyk.png
+https://i.imgur.com/NtNCVZy.png
+TODO chybí Strategie řešení iterativním zlepšováním DALE 8 images <br />
+https://i.imgur.com/5Gbs4mB.png
+https://i.imgur.com/hZIxbDR.png
+https://i.imgur.com/5OBrgJv.png
+https://i.imgur.com/dTx4E0i.png
+https://i.imgur.com/ZvsUMkU.png
+https://i.imgur.com/TyrNDz6.png
+https://i.imgur.com/OKwpQuP.png
+https://i.imgur.com/xvTnp9F.png
+TODO KONEC chybí Meze možností algoritmického řešení problémů. P, NP a NP-úplné problémy.chybí Zdolávání mezí možností algoritmického řešení problémů <br />
 WIP skoky mezi UTI a jinýma tu budou <br />
 
 ### 1.5) ZSU
