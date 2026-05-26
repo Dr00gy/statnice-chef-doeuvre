@@ -1287,7 +1287,523 @@ Možná vztahy na DSka, ALG a jakési PJP, ZDS. Něco malinko z SWI stuff.
 
 ### 1.4) ALG
 
+WIP skoky mezi UTI a jinýma tu budou <br />
+
 ### 1.5) ZSU
+Machine Learning:
+* Processes data from different sources.
+* Predicts events based on models, looks for connections, sets probabilities for different events.
+
+Artificial Intelligence:
+* Based on the output of machine learning, it defines the actions to be performed.
+* Mimics human behavior.
+* Modifies its behavior based on the history of the effects of past actions evaluated by machine learning.
+
+* GPT-3 (2020)
+* 175 billion parameters (700 GB of memory to store it)
+* It would require 355 years and $4,600,000 to train on nVidia V100.
+* GPT-4 (2023) - 1,8 trillion parameters (8 x 220 billions)
+* LLama 3.1 (2024) - 8B, 70.6B, 405B parameters.
+* Mistral 2 Large (2024) - 123B parameters.
+* Claude 3.5 (2024) - 70B to 2T parameters.
+
+* GPT-3, Training 2023
+* Training on C4 - 7TB of data from a CommonCrawl datset.
+* Training of Intel, Nvidia, Google, Microsoft.
+* Fastest possible training on different accelerators.
+* Intel Gaudi, Nvidia, H100, Google TPU4
+
+Why should I study machine learning? (GPT-3) <br />
+* Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed.
+* Machine learning is a rapidly growing field with many applications in areas such as big data, predictive analytic, and image recognition.
+
+Why should I study machine learning? (GPT-3) <br />
+* Machine learning is a subfield of artificial intelligence (AI) that is concerned with the design and development of algorithms that can learn from and make predictions on data. * Machine learning algorithms are used in a variety of applications, including email filtering, detection of network intruders, and computer vision.
+
+* A matrix where rows are records and columns are features.
+* The matrix usually contains many data types together.
+* Combination of strings, numeric, categorical and other data.
+* Analysis of such complex dataset is hard.
+* Each feature has its own properties.
+WIP skok na matice <br />
+
+Numeric values <br />
+* Numeric values may be integer, real or complex number.
+* Integer values belong to a specific range, e.g. byte, short, int, long, etc.
+* Real number are usually float, double or decimal.
+* Complex numbers are rare case.
+* Integer values are processed as real or as categorical type.
+WIP skok na ZDS <br />
+
+Real numbers <br />
+* Real number columns has basic limits - minimum and maximum.
+* Other important terms are mean, median, and quartile.
+* Distribution of real values is the most important feature.
+* Distribution depicts which values are present a how frequently.
+* The overview of the feature may be taken from the histogram or a Box plot.
+
+Categorical data <br />
+* Categorical data represents a set of possibilities a feature may take.
+* The data may be numeric or textual.
+* Very frequent data type unusually together with numeric.
+* The overview of the feature may be taken from the (discreet) histogram.
+* Very frequent as a class/label for a data.
+
+Categorical data <br />
+Processing is done using one of the following process:
+* binarization,
+* ordinal encoding (problem with sorting and distance),
+* one-hot encoding (dummy encoding),
+* embedding,
+* algorithmic encoding (cyclic feature).
+
+Textual data <br />
+* Textual data are in the form of a single word or an open text.
+* Single word and short text may represent a categorical value (e.g. METAR).
+* Open text columns are hard to process.
+* Usually processed separately as a text data: normalized, tokenized,encoded (embedding), ...
+
+* A completely different data than data matrix.
+* Consists of Nodes and Edges ( and Values).
+* Depicts the structure, or topology of some information or relations.
+* May depict many features of data,
+![image](https://hackmd.io/_uploads/HJOJYd7xMe.png)
+![image](https://hackmd.io/_uploads/rkn1FuQeMg.png)
+![image](https://hackmd.io/_uploads/rkAytO7xMx.png)
+![image](https://hackmd.io/_uploads/S1GxFOmefg.png)
+![image](https://hackmd.io/_uploads/Bk4ltO7gMe.png)
+![image](https://hackmd.io/_uploads/HydxKu7xMl.png)
+Statistical Data Features <br />
+* What kind of statistical features exits?
+* Which are important for a data analysis?
+* May statistics compute the similarity of two features?
+
+Statistical Data Features - Population <br />
+* Populations vs. Sample
+* Population is a set of all objects in a group.
+* Sample is a subset of the populations.
+* Randomness of a sample is a biggest question.
+![image](https://hackmd.io/_uploads/SyUZFuQgfx.png)
+![image](https://hackmd.io/_uploads/HkqZYd7lGx.png)
+![image](https://hackmd.io/_uploads/rknWY_XlMl.png)
+![image](https://hackmd.io/_uploads/BJkfY_mgfe.png)
+![image](https://hackmd.io/_uploads/rJXMF_mxGe.png)
+* Clustering techniques apply when there is no class to be predicted.
+* The instances are to be divided into natural groups.
+* These clusters reflect some mechanism from which instances are drawn.
+* A mechanism that causes some instances to bear a stronger resemblance to each other than they do to the remaining instances.
+* Clustering naturally requires different techniques than classification.
+
+* Clustering produces groups of objects.
+* The groups are exclusive or overlapping.
+* Assignment to the group may be probabilistic (fuzzy).
+* Groups may be hierarchical.
+* Most clusters are based on similarity among the the objects
+represented by distance or similarity function.
+
+Clustering - Distances and Similarity <br />
+* How far apart are the objects?
+* How close together are the objects?
+
+Clustering - Distances and Similarity <br />
+* Distance usually refers to a category of functions that measures difference in a Cartesian space.
+* The smaller distances the more closer the objects are.
+* To maintain basic properties of the coordinate system, we expect the function to be a Metric:
+d(x, y) ≥ 0 (non-negativity) <br />
+d(x, y) = 0 ⇔ x = y (identity) <br />
+d(x, y) = d(y, x) (symmetry) <br />
+d(x, y) ≤ d(x, z) + d(z, y) (triangle inequality) <br />
+
+Clustering - k-means algorithm <br />
+* k-means is the basic algorithm or the Representation based
+clustering.
+* Clustering that uses Manhattan distance is called k-median.
+* A variant that does not uses distance but similarity is called k-medoid.
+* Distance computation may be accelerated using space-indexing data structures (kD-Tree, ball-tree, etc.).
+* All the points are assigned to the clusters.
+
+Clustering - Hierarchical Clustering <br />
+* Creates a hierarchical structure above the objects from the dataset.
+* The different levels of clustering granularity provide different application-specific insights to the data.
+* Hierarchical organization of the data allows even better flat cluster
+
+Clustering - Hierarchical Clustering - Algorithm types <br />
+* Bottom-up (agglomerative) methods
+* Individual data objects are agglomerated into higher level clusters.
+* Objective function is used for computing similarity.
+* Top-down (divisive) methods
+* Partitioning of the data objects into tree-like structure.
+* A flat clustering algorithm may be used for the partitioning in a given step.
+* A trade-off in balance of the tree between number of clusters and the number of objects in each cluster/leaf.
+
+Clustering - Hierarchical Clustering - Agglomerative Methods <br />
+* Iterative approach starting with individual data object.
+* Two clusters are merged in each iteration.
+* Each merging step reduces the number of clusters by one.
+* A carefully selected measure for computation of the distance between individual objects need to be defined.
+* A proper strategy for measuring the distance between clusters need to be defined also.
+* A distance matrix should be stored in a memory, the computational complexity increases when not.
+
+Clustering - Clustering Evaluation <br />
+* The clustering groups similar objects into groups.
+* The clusters created by each algorithm may differ.
+* Most important part is the comparison the properties of the objects between groups.
+* The ideal way is to evaluate the aggregated features of the groups similarly to the exploration analysis.
+* The groups should differ in at least single feature.
+
+Clustering - Clustering Evaluation <br />
+* Internal Validation Criteria
+* Sum of Square Distances to Centroids
+* Intra-cluster to Inter-cluster distance ratio.
+* Silhouette coefficient
+* Probabilistic measure
+* External Validation Criteria
+* Purity
+* Gini index
+* Entropy
+![image](https://hackmd.io/_uploads/SyuStdmlfg.png)
+![image](https://hackmd.io/_uploads/rJ3SY_mgMx.png)
+![image](https://hackmd.io/_uploads/SyJLt_XlGl.png)
+![image](https://hackmd.io/_uploads/B1WIFumxfl.png)
+![image](https://hackmd.io/_uploads/SyVUtumgGx.png)
+![image](https://hackmd.io/_uploads/rJv8tu7gMx.png)
+![image](https://hackmd.io/_uploads/rJYUKdmlGl.png)
+![image](https://hackmd.io/_uploads/H1zDF_QeMe.png)
+![image](https://hackmd.io/_uploads/ryNwYOXxMg.png)
+![image](https://hackmd.io/_uploads/H1vPtuQlMx.png)
+![image](https://hackmd.io/_uploads/S15vYd7eMx.png)
+![image](https://hackmd.io/_uploads/S1pvKu7gGe.png)
+![image](https://hackmd.io/_uploads/SkedK_Xgfl.png)
+Knowledge Representation - Knowledge <br />
+* Declarative Knowledge
+* Declarative knowledge is to know about something.
+* It includes concepts, facts, and objects.
+* It is also called descriptive knowledge and expressed in declarative sentences.
+* It is simpler than procedural language.
+* Structural Knowledge
+* Structural knowledge is basic knowledge to problem-solving.
+* It describes relationships between various concepts such as kind of, part of, and grouping of something.
+* It describes the relationship that exists between concepts or objects.
+
+Knowledge Representation - Knowledge <br />
+* Procedural Knowledge
+* It is also known as imperative knowledge.
+* Procedural knowledge is a type of knowledge which is responsible for knowing how to do something.
+* It can be directly applied to any task.
+* It includes rules, strategies, procedures, agendas, etc.
+* Procedural knowledge depends on the task on which it can be applied.
+
+Knowledge Representation - Knowledge <br />
+* Meta Knowledge
+* Knowledge about other types of Knowledge.
+* Heuristic Knowledge
+* Heuristic knowledge is representing knowledge of some experts in a filed or subject.
+* Heuristic knowledge is rules of thumb based on previous experiences, awareness of approaches, and which are good to work but not guaranteed.
+
+Knowledge Representation - Techniques - Production Rules <br />
+* The working memory contains the description of the current state of problems-solving and rule can write knowledge to the working memory.
+* This knowledge match and may fire other rules.
+* If there is a new situation (state) generates, then multiple production rules will be fired together, this is called conflict set.
+* In this situation, the agent needs to select a rule from these sets, and it is called a conflict resolution.
+
+Knowledge Representation - Requirements <br />
+* Representational Accuracy: It should represent all kinds of required knowledge.
+* Inferential Adequacy: It should be able to manipulate the representational structures to produce new knowledge corresponding to the existing structure.
+* Inferential Efficiency: The ability to direct the inferential knowledge mechanism into the most productive directions by storing appropriate guides.
+* Acquisitional efficiency: The ability to acquire new knowledge easily using automatic methods.
+
+Knowledge Representation - Machine Learning <br />
+* Machine learning is simplified system and requires different representation.
+* Knowledge is learned according to the chosen algorithm.
+* Each algorithm uses specific knowledge representation and specific concepts.
+* Most algorithms expects vector representations.
+
+Knowledge Representation - Association rule <br />
+* Generalization of the Classification Rule
+* May predict any type of attribute.
+* May prediction multiple attributes or combinations.
+* Rules may be combined to gather the knowledge
+
+If temperature = cool then humidity = normal <br />
+
+Knowledge Representation - Rules with exceptions <br />
+* Generalization of any rules using exceptions.
+* Naturally adapts a rules set using the exception.
+* Exceptions may be explained by domain expert.
+![image](https://hackmd.io/_uploads/B11jK_7lzl.png)
+![image](https://hackmd.io/_uploads/SJMoKdQlfe.png)
+![image](https://hackmd.io/_uploads/HkBoK_7lGg.png)
+![image](https://hackmd.io/_uploads/Hk_jY_QgGe.png)
+![image](https://hackmd.io/_uploads/rkcoYdQlGl.png)
+![image](https://hackmd.io/_uploads/rkRitO7xzl.png)
+![image](https://hackmd.io/_uploads/BJW2tdmxGl.png)
+* Classification process is a process where objects are assigned to different class by their properties using a model.
+* The process is divided in two or three phases - training, validation and testing.
+* The training phase uses a predefined class assignment to create a model that is able to fit on the training set of objects.
+* The validation phase uses a validation set of object to evaluate the quality of the model.
+* The testing phase evaluates the model on a testing set of objects and evaluates the precision.
+
+Classification <br />
+* The quality of the model depends on the principle of the algorithm and the quality of the training data.
+* A no-free-lunch theorem1 applies here.
+* Each algorithm makes different types of errors.
+* The goal is to train as good model as possible for a specific data.
+* Auto-ML tries to solve the problem with brute force.
+
+Classification - Nearest Neighbors Classification <br />
+* Simple algorithm that utilizes a distance function for classification.
+* The predicted class is the majority class of the nearest neighbors.
+* Finding the nearest neighbors is the crucial part.
+* Efficient data structure for space division are used.
+* The main algorithms are quadrant and octrees, and kD-tree or other
+data structures.
+
+Classification - Simple Probabilistic Modeling <br />
+* Simple probabilistic modeling express the resulting probability based on all attributes together.
+* The probability is computed separately according to the class/label.
+* Prediction is computed as a multiplication of the particular probabilities.
+![image](https://hackmd.io/_uploads/H1U0tOmlfg.png)
+![image](https://hackmd.io/_uploads/rktCKOQxzg.png)
+![image](https://hackmd.io/_uploads/Sk3CKumgzg.png)
+![image](https://hackmd.io/_uploads/HyAAYOQgGg.png)
+![image](https://hackmd.io/_uploads/rk-1q_7xMe.png)
+![image](https://hackmd.io/_uploads/SkrJ9OXefe.png)
+![image](https://hackmd.io/_uploads/rJuy5_mezx.png)
+![image](https://hackmd.io/_uploads/B1sy5u7lMx.png)
+![image](https://hackmd.io/_uploads/BkT1cO7xfe.png)
+![image](https://hackmd.io/_uploads/SyJeqOmeMg.png)
+Decision Trees - Pruning <br />
+* Fully trained decision tree is a 100% classifier.
+* Fully grown decision tree contains many unnecessary nodes.
+* Pruning removes the unnecessary nodes to improve efficiency on the testing dataset.
+* Two variants: Prepruning and Postpruning.
+
+Decision Trees - Pruning <br />
+* Pre-pruning:
+* Applied during constructing the tree.
+* Stops split when some condition are satisfied.
+* Post-pruning:
+* More frequent variant
+* Two operation: Subtree replacement and subtree raising.
+
+Decision Trees - Pruning <br />
+* Each node is processed and evaluated.
+* Sub-tree replacement operation replaces the sub-tree by the leaf node.
+* Sub-tree raising operation moves upward a node with its children and replaces the parent nodes. Sibling nodes need to be reclassified.
+
+Decision Trees - Pruning <br />
+* Evaluation of the pruning operation is a major question.
+* Simplest possibility if the hold-out set of training objects.
+* Hold-out set is set of objects removed from the training data and used strictly in pruning process.
+* Other option is to estimate the error produced by the tree and making the changes.
+
+Classification - Covering rules <br />
+* Decision Trees works in a divide-and-conquer principle.
+* Bottom-up approach may focus on specific classes.
+* And covering all instances belonging to the specified class.
+* The covering is done using set of rules belonging to a specified class.
+
+Classification - Covering rules <br />
+* Covering algorithm add a test to the rule under construction which maximizes the accuracy.
+* Searching for the optimal test is similar to the decision trees.
+* Suppose the new rule will cover a total of t instances, of which p are positive examples of the class and t − p are in other classes.
+* The error rate of the new rule is then p/t.
+* The test which maximizes the ration p/t is chosen as best test.
+![image](https://hackmd.io/_uploads/SyPzcd7lGe.png)
+![image](https://hackmd.io/_uploads/BynGcO7xGl.png)
+![image](https://hackmd.io/_uploads/By1Q5OXgGg.png)
+![image](https://hackmd.io/_uploads/BJGm5dQeze.png)
+![image](https://hackmd.io/_uploads/Bk_XcdQxze.png)
+![image](https://hackmd.io/_uploads/Byim9OXefg.png)
+![image](https://hackmd.io/_uploads/By6Qcdmxze.png)
+![image](https://hackmd.io/_uploads/H1xEcuXlGx.png)
+![image](https://hackmd.io/_uploads/BJX4cumxMx.png)
+![image](https://hackmd.io/_uploads/HkBNcOmeGl.png)
+![image](https://hackmd.io/_uploads/SkI_5uQlfl.png)
+![image](https://hackmd.io/_uploads/HJFO9_XeGg.png)
+![image](https://hackmd.io/_uploads/rJ2O9_mlGe.png)
+![image](https://hackmd.io/_uploads/BJkYqOXxze.png)
+![image](https://hackmd.io/_uploads/ByzK9_mxMx.png)
+![image](https://hackmd.io/_uploads/BkrF9OQeMx.png)
+![image](https://hackmd.io/_uploads/SJ_Kqumefl.png)
+![image](https://hackmd.io/_uploads/rJTtcdXxze.png)
+Why Classification Metrics Matter <br />
+* Classification metrics help evaluate how effectively a model can categorize instances.
+* Different metrics highlight strengths and weaknesses in model performance.
+* Understanding these metrics ensures that the model meets the application-specific needs.
+
+Training and Testing Sets <br />
+* Training Set: The data used to train the model, where it learns patterns and relationships.
+* Testing Set: Separate data to evaluate model performance, ensuring that it generalizes beyond training data.
+
+Why Use Separate Sets? <br />
+* Prevents overfitting by assessing on unseen data.
+* Provides a realistic estimate of model accuracy in practical applications.
+
+Classification Metrics <br />
+* Evaluates how well a model can classify samples into categories.
+* Common metrics include precision, precision, recall, F1 score, and AUC-ROC.
+* Each metric provides unique insights, useful in different applications.
+
+Key Classification Metrics <br />
+* Accuracy: Overall correctness of the predictions.
+* Precision: Correctness among positive predictions.
+* Recall: Completeness of positive class predictions.
+* F1-Score: Balances Precision and Recall.
+* AUC-ROC: Measures class separation capability.
+
+What is Cross-Validation? <br />
+* Cross-validation is a technique used to assess the performance of a model on unseen data.
+* It helps to identify how well the model generalizes to an independent dataset.
+* Cross-validation involves splitting the dataset into multiple subsets and using different subsets for training and testing.
+
+Why Use Cross-Validation? <br />
+* To avoid overfitting or underfitting.
+* To make better use of limited data by training and evaluating the model multiple times.
+* To get a more reliable estimate of model performance.
+
+Types of Cross-Validation - K-Fold Cross-Validation <br />
+* The data is divided into K subsets (folds).
+* The model is trained on K − 1 subsets and tested on the remaining subset.
+* This process is repeated K times, each time with a different subset as the test set.
+
+Types of Cross-Validation - Leave-One-Out Cross-Validation (LOO) <br />
+* A special case of the K-Fold where K equals the total number of data points.
+* Each data point is used once as the test set and the model is trained on all other data points.
+
+Types of Cross-Validation - Stratified K-Fold Cross-Validation <br />
+* Ensures that each fold has a similar distribution of the target variable (especially important for imbalanced datasets).
+
+K-Fold Cross-Validation Example <br />
+* Suppose that we have a dataset with 10 data points.
+* In 5-Fold Cross-Validation, the dataset will be split into 5 folds.
+* Performance is averaged over the five different test sets.
+* Fold 1: Train on folds 2-5, test on fold 1.
+* Fold 2: Train on folds 1, 3-5, test on fold 2.
+* Fold 3: Train on folds 1-2, 4-5, test on fold 3.
+* Fold 4: Train on folds 1-3, 5, test on fold 4.
+* Fold 5: Train on folds 1-4, test on fold 5.
+
+Evaluating Cross-Validation Results <br />
+* After cross-validation, we compute the average of the model’s performance metrics (e.g., accuracy, precision, recall) across all folds.
+* This gives a more reliable estimate of the performance of the model than a single train-test split.
+
+Advantages <br />
+* Less variance in the estimate compared to a single train-test split.
+* Makes better use of the available data.
+
+Disadvantages <br />
+* More computationally expensive, especially for large datasets.
+* May be unnecessary for very large datasets.
+
+Cross-Validation in Practice <br />
+* Split the dataset into K folds.
+* For each fold, train the model on the remaining K − 1 folds and evaluate it on the current fold.
+* Repeat for all folds and compute average performance.
+
+When to Use Cross-Validation <br />
+* Use when you have limited data.
+* When you want to ensure that your model is not overfitting or underfitting.
+* Cross-validation is also useful for model selection and
+hyperparameter tuning.
+![image](https://hackmd.io/_uploads/SJ6pqOXefg.png)
+![image](https://hackmd.io/_uploads/B110qOXlze.png)
+![image](https://hackmd.io/_uploads/S1zC9u7xzx.png)
+![image](https://hackmd.io/_uploads/BkHAcuXlGe.png)
+![image](https://hackmd.io/_uploads/SkdA5dXlMg.png)
+![image](https://hackmd.io/_uploads/HksRqumxfx.png)
+![image](https://hackmd.io/_uploads/rJ00q_Qefx.png)
+![image](https://hackmd.io/_uploads/rklyodmlzl.png)
+![image](https://hackmd.io/_uploads/B1S1jumlGe.png)
+![image](https://hackmd.io/_uploads/rJcgiOmxMl.png)
+![image](https://hackmd.io/_uploads/SyResuXgGx.png)
+![image](https://hackmd.io/_uploads/r1-WsdXeMx.png)
+![image](https://hackmd.io/_uploads/SJ4Wsd7lGl.png)
+![image](https://hackmd.io/_uploads/Hywbj_mxze.png)
+![image](https://hackmd.io/_uploads/rJYWo_mxzl.png)
+![image](https://hackmd.io/_uploads/rkoZjdQlGe.png)
+![image](https://hackmd.io/_uploads/SJAWsdmlGg.png)
+![image](https://hackmd.io/_uploads/S1gzsdmlfe.png)
+![image](https://hackmd.io/_uploads/H1QMo_7lMl.png)
+![image](https://hackmd.io/_uploads/B1bcidXlMl.png)
+![image](https://hackmd.io/_uploads/Hy7couQezl.png)
+![image](https://hackmd.io/_uploads/B1L5j_XlGl.png)
+![image](https://hackmd.io/_uploads/H1Css_Xefg.png)
+![image](https://hackmd.io/_uploads/Sy-hid7xfe.png)
+![image](https://hackmd.io/_uploads/Sy4nju7efx.png)
+![image](https://hackmd.io/_uploads/BkI3iO7xMg.png)
+![image](https://hackmd.io/_uploads/Skqho_mgfl.png)
+![image](https://hackmd.io/_uploads/HJ23id7lfl.png)
+![image](https://hackmd.io/_uploads/Hk1ao_Qxfl.png)
+![image](https://hackmd.io/_uploads/B1Paj_mlfg.png)
+![image](https://hackmd.io/_uploads/H1Yao_Qxfg.png)
+![image](https://hackmd.io/_uploads/Sk3asu7gfx.png)
+![image](https://hackmd.io/_uploads/SkApiuXgzg.png)
+Data Transformation <br />
+* Data transformation techniques include methods, that may help to transform data before any machine learning algorithm is applied.
+* The goal is to remove the unnecessary data and highlight the most important aspects of the data to process.
+
+The techniques includes: <br />
+* Attribute selection
+* Attribute discretization
+* Data projections
+* Sampling
+* Data cleansing
+* Converting multi-class problems to two-class ones.
+
+Data Transformation- Attribute selection <br />
+* Most machine learning algorithms are designed to learn which are the most appropriate attributes to use for making their decisions.
+* In practice, even a random variable may decrease the performance of the classifier (chaotic behavior in deeper levels).
+* Moreover, even a relevant attribute may decrease the performance (fragmentation due to splitting near the root).
+
+Data Transformation- Attribute selection- Scheme-independent <br />
+* Scheme-independent selection, also called a filter method prepares the dataset before a machine learning algorithm is applied.
+* Selection of the Relevance measure universally is impossible.
+* The first possibility is to select just enough attribute to optimally cover the required classes.
+* Another possibility is to use model that select the useful attributes, e.g. Decision Tree, before a target algorithm is used.
+
+Data Transformation- Attribute selection- Scheme-independent <br />
+* Described algorithm may fail when two almost identical attributes exists - both are rejected or accepted.
+* Another way of eliminating redundant attributes as well as irrelevant ones is to select a subset of attributes that individually correlate well with the class but have little inter-correlation
+* One possibility is symmetric uncertainty.
+* Subset may be generated using exhaustive search.
+
+Data Transformation- Attribute selection- Scheme-independent <br />
+* Greedy search for optimal subset of features may be used with evaluation using the mentioned metric.
+* There are two possible direction of the greedy algorithm:
+* Forward selection
+* Backward elimination
+* Each approach have its start and stopping criterion.
+
+Data Transformation- Discretizing of Numeric Attributes <br />
+* Numeric attributes are problematic for many algorithms.
+* Even the algorithms that accept numeric attributes works faster and/or more effective.
+* Main reason is the assumption of the probability distribution about the numeric attribute.
+* Discretization may be unsupervised or supervised (with respect to the classes).
+
+Data Transformation- Discretizing of Numeric Attributes <br />
+* Unsupervised discretization distribute instances according the valud into predefined bins.
+* Equal-interval binning simply divide the full range into equal sized bins.
+* Equal-frequency binning distribute instances to the bins with equal frequency based on the histogram.
+
+* Supervised discretization distribute instances according the value and classes.
+* Entropy-based discretization follow the approach used in Decision Tree.
+* The bins are generated dynamically based on the split criterion until intervals with the same class remains.
+* The split point is always between different class labels not the same, which may be used in optimization.
+* The stopping criterion may be confused by multiple class values.
+
+Data Transformation- Projection <br />
+* Projection is a mapping that transform data in a some way.
+* Data often need application of some mathematical algorithms, e.g. difference between two dates (age), ....
+* Other transformation may involve general knowledge, e.g. holidays, day in a week, chemical atomic numbers, ...
+* Clustering may be another type of transformation that produces a new attribute.
+* Special kind of transformation is able to map data into lover dimension.
+![image](https://hackmd.io/_uploads/B1Gg3_Qgfg.png)
+![image](https://hackmd.io/_uploads/r1jx2uXgGl.png)
+![image](https://hackmd.io/_uploads/SkyW3_XxGe.png)
+![image](https://hackmd.io/_uploads/SJ--2_QlGg.png)
+![image](https://hackmd.io/_uploads/ry7ZhuXlfl.png)
+![image](https://hackmd.io/_uploads/SJuZh_QlGl.png)
 
 ### 1.6) Sítě
 WIP JUMP na ZDS <br />
