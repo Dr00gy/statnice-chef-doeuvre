@@ -1453,103 +1453,175 @@ Amortizovaná složitost
 * Počet operací pro jeden vstup ze sady může být sice vysoký, ale je vyvážen, „amortizován“ výrazně menším počtem operací pro další vstupy ze sady.
 * Například jeden ze vstupů způsobí rozsáhlou změnu v datové struktuře a díky tomu zpracování dalších vstupů proběhne snadněji.
 * V průmyslu je například nákup drahého stroje amortizován levnější výrobou výrobku.
-![image](https://hackmd.io/_uploads/SJGETKXgzl.png)
-![image](https://hackmd.io/_uploads/HJN46FXgfx.png)
-![image](https://hackmd.io/_uploads/Skv4TK7eGx.png)
-![image](https://hackmd.io/_uploads/HJtNTKXeGl.png)
-![image](https://hackmd.io/_uploads/BJnETtXefg.png)
-![image](https://hackmd.io/_uploads/ry0ETtXxfl.png)
-![image](https://hackmd.io/_uploads/HJWBTFQxzl.png)
-![image](https://hackmd.io/_uploads/SkmSaYmgzx.png)
-![image](https://hackmd.io/_uploads/B1IHTF7xMg.png)
-![image](https://hackmd.io/_uploads/rydr6KQxfe.png)
-![image](https://hackmd.io/_uploads/HygZyc7gzx.png)
-![image](https://hackmd.io/_uploads/r1QWy5mxMe.png)
-![image](https://hackmd.io/_uploads/BJrZyc7lMx.png)
-![image](https://hackmd.io/_uploads/SJ_-J9XeMx.png)
-![image](https://hackmd.io/_uploads/Hkc-1c7eMl.png)
-![image](https://hackmd.io/_uploads/ry2W1qQgfe.png)
-![image](https://hackmd.io/_uploads/Hy1Gy5Qlfl.png)
-![image](https://hackmd.io/_uploads/SyWGJ5QgMg.png)
-![image](https://hackmd.io/_uploads/SJUmJqXlGl.png)
-![image](https://hackmd.io/_uploads/r1_7157eMg.png)
-![image](https://hackmd.io/_uploads/B1EV15mlMe.png)
-![image](https://hackmd.io/_uploads/rkL4kcmgze.png)
-![image](https://hackmd.io/_uploads/HkKVk9XxMe.png)
-![image](https://hackmd.io/_uploads/r124k5XxMl.png)
-![image](https://hackmd.io/_uploads/r16NJcXgzg.png)
-![image](https://hackmd.io/_uploads/rkxHJc7gMg.png)
-![image](https://hackmd.io/_uploads/HyXHJ5mxfe.png)
-![image](https://hackmd.io/_uploads/HyBBk9QxMx.png)
-![image](https://hackmd.io/_uploads/HkdBycQxGx.png)
-![image](https://hackmd.io/_uploads/H15rk9QxMe.png)
-![image](https://hackmd.io/_uploads/S1A21qmlMx.png)
-![image](https://hackmd.io/_uploads/B1eTyq7lze.png)
-![image](https://hackmd.io/_uploads/B1mpkcQgMx.png)
-![image](https://hackmd.io/_uploads/By8aJ97lMx.png)
-![image](https://hackmd.io/_uploads/Sk_aJq7ezg.png)
-![image](https://hackmd.io/_uploads/HyjT19QeMg.png)
-![image](https://hackmd.io/_uploads/B10TJ97xMe.png)
-![image](https://hackmd.io/_uploads/r1eRkq7xMl.png)
-![image](https://hackmd.io/_uploads/HJXAk97xGg.png)
-![image](https://hackmd.io/_uploads/HJIRJ5mefl.png)
-![image](https://hackmd.io/_uploads/HJlJgcmlMg.png)
-![image](https://hackmd.io/_uploads/B1Xyec7lMg.png)
-![image](https://hackmd.io/_uploads/rk8kxqXeMg.png)
-![image](https://hackmd.io/_uploads/ByYyxqmezg.png)
-![image](https://hackmd.io/_uploads/SJ21l5XxGl.png)
-![image](https://hackmd.io/_uploads/BJyxgcmezx.png)
-![image](https://hackmd.io/_uploads/HyWle5mlMg.png)
-![image](https://hackmd.io/_uploads/r1Belc7gzx.png)
-https://i.imgur.com/51Pe7dB.png
+![image](https://hackmd.io/_uploads/SJGETKXgzl.png) <br />
+![image](https://hackmd.io/_uploads/HJN46FXgfx.png) <br />
+![image](https://hackmd.io/_uploads/Skv4TK7eGx.png) <br />
+![image](https://hackmd.io/_uploads/HJtNTKXeGl.png) <br />
+![image](https://hackmd.io/_uploads/BJnETtXefg.png) <br />
+![image](https://hackmd.io/_uploads/ry0ETtXxfl.png) <br />
+![image](https://hackmd.io/_uploads/HJWBTFQxzl.png) <br />
+![image](https://hackmd.io/_uploads/SkmSaYmgzx.png) <br />
+![image](https://hackmd.io/_uploads/B1IHTF7xMg.png) <br />
+![image](https://hackmd.io/_uploads/rydr6KQxfe.png) <br />
+![image](https://hackmd.io/_uploads/HygZyc7gzx.png) <br />
+![image](https://hackmd.io/_uploads/r1QWy5mxMe.png) <br />
+![image](https://hackmd.io/_uploads/BJrZyc7lMx.png) <br />
+![image](https://hackmd.io/_uploads/SJ_-J9XeMx.png) <br />
+![image](https://hackmd.io/_uploads/Hkc-1c7eMl.png) <br />
+![image](https://hackmd.io/_uploads/ry2W1qQgfe.png) <br />
+![image](https://hackmd.io/_uploads/Hy1Gy5Qlfl.png) <br />
+![image](https://hackmd.io/_uploads/SyWGJ5QgMg.png) <br />
+![image](https://hackmd.io/_uploads/SJUmJqXlGl.png) <br />
+![image](https://hackmd.io/_uploads/r1_7157eMg.png) <br />
+![image](https://hackmd.io/_uploads/B1EV15mlMe.png) <br />
+![image](https://hackmd.io/_uploads/rkL4kcmgze.png) <br />
+![image](https://hackmd.io/_uploads/HkKVk9XxMe.png) <br />
+![image](https://hackmd.io/_uploads/r124k5XxMl.png) <br />
+![image](https://hackmd.io/_uploads/r16NJcXgzg.png) <br />
+![image](https://hackmd.io/_uploads/rkxHJc7gMg.png) <br />
+![image](https://hackmd.io/_uploads/HyXHJ5mxfe.png) <br />
+![image](https://hackmd.io/_uploads/HyBBk9QxMx.png) <br />
+![image](https://hackmd.io/_uploads/HkdBycQxGx.png) <br />
+![image](https://hackmd.io/_uploads/H15rk9QxMe.png) <br />
+![image](https://hackmd.io/_uploads/S1A21qmlMx.png) <br />
+![image](https://hackmd.io/_uploads/B1eTyq7lze.png) <br />
+![image](https://hackmd.io/_uploads/B1mpkcQgMx.png) <br />
+![image](https://hackmd.io/_uploads/By8aJ97lMx.png) <br />
+![image](https://hackmd.io/_uploads/Sk_aJq7ezg.png) <br />
+![image](https://hackmd.io/_uploads/HyjT19QeMg.png) <br />
+![image](https://hackmd.io/_uploads/B10TJ97xMe.png) <br />
+![image](https://hackmd.io/_uploads/r1eRkq7xMl.png) <br />
+![image](https://hackmd.io/_uploads/HJXAk97xGg.png) <br />
+![image](https://hackmd.io/_uploads/HJIRJ5mefl.png) <br />
+![image](https://hackmd.io/_uploads/HJlJgcmlMg.png) <br />
+![image](https://hackmd.io/_uploads/B1Xyec7lMg.png) <br />
+![image](https://hackmd.io/_uploads/rk8kxqXeMg.png) <br />
+![image](https://hackmd.io/_uploads/ByYyxqmezg.png) <br />
+![image](https://hackmd.io/_uploads/SJ21l5XxGl.png) <br />
+![image](https://hackmd.io/_uploads/BJyxgcmezx.png) <br />
+![image](https://hackmd.io/_uploads/HyWle5mlMg.png) <br />
+![image](https://hackmd.io/_uploads/r1Belc7gzx.png) <br />
+![image](https://i.imgur.com/51Pe7dB.png) <br />
 TODO chybí uplne prohledavani, travelling salesman, batoh a pruchod grafu do sirky a hloubky DALE 30 images <br />
-https://i.imgur.com/zm7k11p.png
-https://i.imgur.com/82tE79a.png
-https://i.imgur.com/z0rLoln.png
-https://i.imgur.com/ohU6svw.png
-https://i.imgur.com/JKcf8hk.png
-https://i.imgur.com/9VMizot.png
-https://i.imgur.com/xPVkBu7.png
-https://i.imgur.com/bNVxHAc.png
-https://i.imgur.com/yWet1FT.png
-https://i.imgur.com/b5nspUU.png
-https://i.imgur.com/v0uxFnj.png
-https://i.imgur.com/tiYqXgC.png
-https://i.imgur.com/Q6muOdo.png
-https://i.imgur.com/DnwIwax.png
-https://i.imgur.com/fn9jB2W.png
-https://i.imgur.com/gnmi4D5.png
-https://i.imgur.com/ltUsGJl.png
-https://i.imgur.com/cksNcPl.png
-https://i.imgur.com/aM1dEJg.png
-https://i.imgur.com/oXKdoyL.png
-https://i.imgur.com/n842BlC.png
-https://i.imgur.com/ATuDmSY.png
-https://i.imgur.com/Us9tMkO.png
-https://i.imgur.com/wCFIXeq.png
-https://i.imgur.com/oKRwgCo.png
-https://i.imgur.com/s89098y.png
-https://i.imgur.com/Gz5Ws5Q.png
+![image](https://i.imgur.com/zm7k11p.png) <br />
+![image](https://i.imgur.com/82tE79a.png) <br />
+![image](https://i.imgur.com/z0rLoln.png) <br />
+![image](https://i.imgur.com/ohU6svw.png) <br />
+![image](https://i.imgur.com/JKcf8hk.png) <br />
+![image](https://i.imgur.com/9VMizot.png) <br />
+![image](https://i.imgur.com/xPVkBu7.png) <br />
+![image](https://i.imgur.com/bNVxHAc.png) <br />
+![image](https://i.imgur.com/yWet1FT.png) <br />
+![image](https://i.imgur.com/b5nspUU.png) <br />
+![image](https://i.imgur.com/v0uxFnj.png) <br />
+![image](https://i.imgur.com/tiYqXgC.png) <br />
+![image](https://i.imgur.com/Q6muOdo.png) <br />
+![image](https://i.imgur.com/DnwIwax.png) <br />
+![image](https://i.imgur.com/fn9jB2W.png) <br />
+![image](https://i.imgur.com/gnmi4D5.png) <br />
+![image](https://i.imgur.com/ltUsGJl.png) <br />
+![image](https://i.imgur.com/cksNcPl.png) <br />
+![image](https://i.imgur.com/aM1dEJg.png) <br />
+![image](https://i.imgur.com/oXKdoyL.png) <br />
+![image](https://i.imgur.com/n842BlC.png) <br />
+![image](https://i.imgur.com/ATuDmSY.png) <br />
+![image](https://i.imgur.com/Us9tMkO.png) <br />
+![image](https://i.imgur.com/wCFIXeq.png) <br />
+![image](https://i.imgur.com/oKRwgCo.png) <br />
+![image](https://i.imgur.com/s89098y.png) <br />
+![image](https://i.imgur.com/Gz5Ws5Q.png) <br />
 TODO chybi sniz a vyres vkladanim, topologicke reseni DALE 3 images <br />
-https://i.imgur.com/pkK3FGe.png
-https://i.imgur.com/XBrHHqM.png
-https://i.imgur.com/2h1h7Tc.png
+![image](https://i.imgur.com/pkK3FGe.png) <br />
+![image](https://i.imgur.com/XBrHHqM.png) <br />
+![image](https://i.imgur.com/2h1h7Tc.png) <br />
 TODO chybi rozdel a panuj nejblizsi dvojice bodu a konvexni obal mnozin, master theorem a 78 images <br />
-https://i.imgur.com/n79DdCr.png
-https://i.imgur.com/QRtyMad.png
-https://i.imgur.com/tWMJ8Wj.png
-https://i.imgur.com/1b2nEoK.png
-https://i.imgur.com/sjlNMyk.png
-https://i.imgur.com/NtNCVZy.png
+![image](https://i.imgur.com/n79DdCr.png) <br />
+![image](https://i.imgur.com/QRtyMad.png) <br />
+![image](https://i.imgur.com/tWMJ8Wj.png) <br />
+![image](https://i.imgur.com/1b2nEoK.png) <br />
+![image](https://i.imgur.com/sjlNMyk.png) <br />
+![image](https://i.imgur.com/NtNCVZy.png) <br />
+![image](https://i.imgur.com/ZcJ9Me1.png) <br />
+![image](https://i.imgur.com/vv3kvJU.png) <br />
+![image](https://i.imgur.com/JX52esn.png) <br />
+![image](https://i.imgur.com/gWinsdK.png) <br />
+![image](https://i.imgur.com/J2XYHxp.png) <br />
+![image](https://i.imgur.com/E5Aic2q.png) <br />
+![image](https://i.imgur.com/PhQRGUj.png) <br />
+![image](https://i.imgur.com/hCUziry.png) <br />
+![image](https://i.imgur.com/ALtRkvv.png) <br />
+![image](https://i.imgur.com/xmWsiNL.png) <br />
+![image](https://i.imgur.com/5rZkfQ1.png) <br />
+![image](https://i.imgur.com/YBPlN8Y.png) <br />
+![image](https://i.imgur.com/2pdUEnH.png) <br />
+![image](https://i.imgur.com/hda5rOK.png) <br />
+![image](https://i.imgur.com/1J9DYT8.png) <br />
+![image](https://i.imgur.com/VvGPfQh.png) <br />
+![image](https://i.imgur.com/Q2RdgpT.png) <br />
+![image](https://i.imgur.com/vxwa4Jd.png) <br />
+![image](https://i.imgur.com/g2fbRFo.png) <br />
+![image](https://i.imgur.com/N67CMVT.png) <br />
+![image](https://i.imgur.com/LAlfUAv.png) <br />
+![image](https://i.imgur.com/ESD6Utc.png) <br />
+![image](https://i.imgur.com/U9rwnVH.png) <br />
+![image](https://i.imgur.com/RLcMWm2.png) <br />
+![image](https://i.imgur.com/mbk1Pvx.png) <br />
+![image](https://i.imgur.com/zg5vn8c.png) <br />
+![image](https://i.imgur.com/nc2w8VN.png) <br />
+![image](https://i.imgur.com/yuvrbUJ.png) <br />
+![image](https://i.imgur.com/vOEHegF.png) <br />
+![image](https://i.imgur.com/KNpbKYR.png) <br />
+![image](https://i.imgur.com/jW7Xedt.png) <br />
+![image](https://i.imgur.com/amMRk9X.png) <br />
+![image](https://i.imgur.com/hldRlyp.png) <br />
+![image](https://i.imgur.com/LGY7CCb.png) <br />
+![image](https://i.imgur.com/8Zck1vY.png) <br />
+![image](https://i.imgur.com/r9NYyPt.png) <br />
+![image](https://i.imgur.com/6YM9nid.png) <br />
+![image](https://i.imgur.com/EByWR6P.png) <br />
+![image](https://i.imgur.com/81sYRjd.png) <br />
+![image](https://i.imgur.com/vwSkklF.png) <br />
+![image](https://i.imgur.com/8W1PbmT.png) <br />
+![image](https://i.imgur.com/ieX3CBo.png) <br />
+![image](https://i.imgur.com/Fe2KVDG.png) <br />
+![image](https://i.imgur.com/75hEmQw.png) <br />
+![image](https://i.imgur.com/TEcqvdB.png) <br />
+![image](https://i.imgur.com/JLNY66i.png) <br />
+![image](https://i.imgur.com/7ncNdJd.png) <br />
+![image](https://i.imgur.com/Yj1bcCK.png) <br />
+![image](https://i.imgur.com/eViXVMb.png) <br />
+![image](https://i.imgur.com/OeVhwlW.png) <br />
+![image](https://i.imgur.com/OdsfMau.png) <br />
+![image](https://i.imgur.com/Y954G6z.png) <br />
+![image](https://i.imgur.com/06uohxC.png) <br />
+![image](https://i.imgur.com/l6rv4Vj.png) <br />
+![image](https://i.imgur.com/7Pb1Mn4.png) <br />
+![image](https://i.imgur.com/IvbQbUS.png) <br />
+![image](https://i.imgur.com/ouald1i.png) <br />
+![image](https://i.imgur.com/wmcOhOF.png) <br />
+![image](https://i.imgur.com/Ee48TF7.png) <br />
+![image](https://i.imgur.com/kJnvV5a.png) <br />
+![image](https://i.imgur.com/xXqM6G2.png) <br />
+![image](https://i.imgur.com/EPQ2XYz.png) <br />
+![image](https://i.imgur.com/QueSPj4.png) <br />
+![image](https://i.imgur.com/ONxnPBE.png) <br />
+![image](https://i.imgur.com/TLwRKlq.png) <br />
+![image](https://i.imgur.com/Q9gvTNH.png) <br />
+![image](https://i.imgur.com/awD49nb.png) <br />
+![image](https://i.imgur.com/xiAbpJY.png) <br />
+![image](https://i.imgur.com/W2USoW7.png) <br />
+![image](https://i.imgur.com/9ztKPZ9.png) <br />
+![image](https://i.imgur.com/HSXMGAk.png) <br />
+![image](https://i.imgur.com/uFE8MvT.png) <br />
 TODO chybí Strategie řešení iterativním zlepšováním DALE 8 images <br />
-https://i.imgur.com/5Gbs4mB.png
-https://i.imgur.com/hZIxbDR.png
-https://i.imgur.com/5OBrgJv.png
-https://i.imgur.com/dTx4E0i.png
-https://i.imgur.com/ZvsUMkU.png
-https://i.imgur.com/TyrNDz6.png
-https://i.imgur.com/OKwpQuP.png
-https://i.imgur.com/xvTnp9F.png
+![image](https://i.imgur.com/5Gbs4mB.png) <br />
+![image](https://i.imgur.com/hZIxbDR.png) <br />
+![image](https://i.imgur.com/5OBrgJv.png) <br />
+![image](https://i.imgur.com/dTx4E0i.png) <br />
+![image](https://i.imgur.com/ZvsUMkU.png) <br />
+![image](https://i.imgur.com/TyrNDz6.png) <br />
+![image](https://i.imgur.com/OKwpQuP.png) <br />
+![image](https://i.imgur.com/xvTnp9F.png) <br />
 TODO KONEC chybí Meze možností algoritmického řešení problémů. P, NP a NP-úplné problémy.chybí Zdolávání mezí možností algoritmického řešení problémů <br />
 WIP skoky mezi UTI a jinýma tu budou <br />
 
@@ -1631,12 +1703,12 @@ Textual data <br />
 * Consists of Nodes and Edges ( and Values).
 * Depicts the structure, or topology of some information or relations.
 * May depict many features of data,
-![image](https://hackmd.io/_uploads/HJOJYd7xMe.png)
-![image](https://hackmd.io/_uploads/rkn1FuQeMg.png)
-![image](https://hackmd.io/_uploads/rkAytO7xMx.png)
-![image](https://hackmd.io/_uploads/S1GxFOmefg.png)
-![image](https://hackmd.io/_uploads/Bk4ltO7gMe.png)
-![image](https://hackmd.io/_uploads/HydxKu7xMl.png)
+![image](https://hackmd.io/_uploads/HJOJYd7xMe.png) <br />
+![image](https://hackmd.io/_uploads/rkn1FuQeMg.png) <br />
+![image](https://hackmd.io/_uploads/rkAytO7xMx.png) <br />
+![image](https://hackmd.io/_uploads/S1GxFOmefg.png) <br />
+![image](https://hackmd.io/_uploads/Bk4ltO7gMe.png) <br />
+![image](https://hackmd.io/_uploads/HydxKu7xMl.png) <br />
 Statistical Data Features <br />
 * What kind of statistical features exits?
 * Which are important for a data analysis?
@@ -1647,11 +1719,11 @@ Statistical Data Features - Population <br />
 * Population is a set of all objects in a group.
 * Sample is a subset of the populations.
 * Randomness of a sample is a biggest question.
-![image](https://hackmd.io/_uploads/SyUZFuQgfx.png)
-![image](https://hackmd.io/_uploads/HkqZYd7lGx.png)
-![image](https://hackmd.io/_uploads/rknWY_XlMl.png)
-![image](https://hackmd.io/_uploads/BJkfY_mgfe.png)
-![image](https://hackmd.io/_uploads/rJXMF_mxGe.png)
+![image](https://hackmd.io/_uploads/SyUZFuQgfx.png) <br />
+![image](https://hackmd.io/_uploads/HkqZYd7lGx.png) <br />
+![image](https://hackmd.io/_uploads/rknWY_XlMl.png) <br />
+![image](https://hackmd.io/_uploads/BJkfY_mgfe.png) <br />
+![image](https://hackmd.io/_uploads/rJXMF_mxGe.png) <br />
 * Clustering techniques apply when there is no class to be predicted.
 * The instances are to be divided into natural groups.
 * These clusters reflect some mechanism from which instances are drawn.
@@ -1725,19 +1797,19 @@ Clustering - Clustering Evaluation <br />
 * Purity
 * Gini index
 * Entropy
-![image](https://hackmd.io/_uploads/SyuStdmlfg.png)
-![image](https://hackmd.io/_uploads/rJ3SY_mgMx.png)
-![image](https://hackmd.io/_uploads/SyJLt_XlGl.png)
-![image](https://hackmd.io/_uploads/B1WIFumxfl.png)
-![image](https://hackmd.io/_uploads/SyVUtumgGx.png)
-![image](https://hackmd.io/_uploads/rJv8tu7gMx.png)
-![image](https://hackmd.io/_uploads/rJYUKdmlGl.png)
-![image](https://hackmd.io/_uploads/H1zDF_QeMe.png)
-![image](https://hackmd.io/_uploads/ryNwYOXxMg.png)
-![image](https://hackmd.io/_uploads/H1vPtuQlMx.png)
-![image](https://hackmd.io/_uploads/S15vYd7eMx.png)
-![image](https://hackmd.io/_uploads/S1pvKu7gGe.png)
-![image](https://hackmd.io/_uploads/SkedK_Xgfl.png)
+![image](https://hackmd.io/_uploads/SyuStdmlfg.png) <br />
+![image](https://hackmd.io/_uploads/rJ3SY_mgMx.png) <br />
+![image](https://hackmd.io/_uploads/SyJLt_XlGl.png) <br />
+![image](https://hackmd.io/_uploads/B1WIFumxfl.png) <br />
+![image](https://hackmd.io/_uploads/SyVUtumgGx.png) <br />
+![image](https://hackmd.io/_uploads/rJv8tu7gMx.png) <br />
+![image](https://hackmd.io/_uploads/rJYUKdmlGl.png) <br />
+![image](https://hackmd.io/_uploads/H1zDF_QeMe.png) <br />
+![image](https://hackmd.io/_uploads/ryNwYOXxMg.png) <br />
+![image](https://hackmd.io/_uploads/H1vPtuQlMx.png) <br />
+![image](https://hackmd.io/_uploads/S15vYd7eMx.png) <br />
+![image](https://hackmd.io/_uploads/S1pvKu7gGe.png) <br />
+![image](https://hackmd.io/_uploads/SkedK_Xgfl.png) <br />
 Knowledge Representation - Knowledge <br />
 * Declarative Knowledge
 * Declarative knowledge is to know about something.
@@ -1794,13 +1866,13 @@ Knowledge Representation - Rules with exceptions <br />
 * Generalization of any rules using exceptions.
 * Naturally adapts a rules set using the exception.
 * Exceptions may be explained by domain expert.
-![image](https://hackmd.io/_uploads/B11jK_7lzl.png)
-![image](https://hackmd.io/_uploads/SJMoKdQlfe.png)
-![image](https://hackmd.io/_uploads/HkBoK_7lGg.png)
-![image](https://hackmd.io/_uploads/Hk_jY_QgGe.png)
-![image](https://hackmd.io/_uploads/rkcoYdQlGl.png)
-![image](https://hackmd.io/_uploads/rkRitO7xzl.png)
-![image](https://hackmd.io/_uploads/BJW2tdmxGl.png)
+![image](https://hackmd.io/_uploads/B11jK_7lzl.png) <br />
+![image](https://hackmd.io/_uploads/SJMoKdQlfe.png) <br />
+![image](https://hackmd.io/_uploads/HkBoK_7lGg.png) <br />
+![image](https://hackmd.io/_uploads/Hk_jY_QgGe.png) <br />
+![image](https://hackmd.io/_uploads/rkcoYdQlGl.png) <br />
+![image](https://hackmd.io/_uploads/rkRitO7xzl.png) <br />
+![image](https://hackmd.io/_uploads/BJW2tdmxGl.png) <br />
 * Classification process is a process where objects are assigned to different class by their properties using a model.
 * The process is divided in two or three phases - training, validation and testing.
 * The training phase uses a predefined class assignment to create a model that is able to fit on the training set of objects.
@@ -1826,16 +1898,16 @@ Classification - Simple Probabilistic Modeling <br />
 * Simple probabilistic modeling express the resulting probability based on all attributes together.
 * The probability is computed separately according to the class/label.
 * Prediction is computed as a multiplication of the particular probabilities.
-![image](https://hackmd.io/_uploads/H1U0tOmlfg.png)
-![image](https://hackmd.io/_uploads/rktCKOQxzg.png)
-![image](https://hackmd.io/_uploads/Sk3CKumgzg.png)
-![image](https://hackmd.io/_uploads/HyAAYOQgGg.png)
-![image](https://hackmd.io/_uploads/rk-1q_7xMe.png)
-![image](https://hackmd.io/_uploads/SkrJ9OXefe.png)
-![image](https://hackmd.io/_uploads/rJuy5_mezx.png)
-![image](https://hackmd.io/_uploads/B1sy5u7lMx.png)
-![image](https://hackmd.io/_uploads/BkT1cO7xfe.png)
-![image](https://hackmd.io/_uploads/SyJeqOmeMg.png)
+![image](https://hackmd.io/_uploads/H1U0tOmlfg.png) <br />
+![image](https://hackmd.io/_uploads/rktCKOQxzg.png) <br />
+![image](https://hackmd.io/_uploads/Sk3CKumgzg.png) <br />
+![image](https://hackmd.io/_uploads/HyAAYOQgGg.png) <br />
+![image](https://hackmd.io/_uploads/rk-1q_7xMe.png) <br />
+![image](https://hackmd.io/_uploads/SkrJ9OXefe.png) <br />
+![image](https://hackmd.io/_uploads/rJuy5_mezx.png) <br />
+![image](https://hackmd.io/_uploads/B1sy5u7lMx.png) <br />
+![image](https://hackmd.io/_uploads/BkT1cO7xfe.png) <br />
+![image](https://hackmd.io/_uploads/SyJeqOmeMg.png) <br />
 Decision Trees - Pruning <br />
 * Fully trained decision tree is a 100% classifier.
 * Fully grown decision tree contains many unnecessary nodes.
@@ -1873,24 +1945,24 @@ Classification - Covering rules <br />
 * Suppose the new rule will cover a total of t instances, of which p are positive examples of the class and t − p are in other classes.
 * The error rate of the new rule is then p/t.
 * The test which maximizes the ration p/t is chosen as best test.
-![image](https://hackmd.io/_uploads/SyPzcd7lGe.png)
-![image](https://hackmd.io/_uploads/BynGcO7xGl.png)
-![image](https://hackmd.io/_uploads/By1Q5OXgGg.png)
-![image](https://hackmd.io/_uploads/BJGm5dQeze.png)
-![image](https://hackmd.io/_uploads/Bk_XcdQxze.png)
-![image](https://hackmd.io/_uploads/Byim9OXefg.png)
-![image](https://hackmd.io/_uploads/By6Qcdmxze.png)
-![image](https://hackmd.io/_uploads/H1xEcuXlGx.png)
-![image](https://hackmd.io/_uploads/BJX4cumxMx.png)
-![image](https://hackmd.io/_uploads/HkBNcOmeGl.png)
-![image](https://hackmd.io/_uploads/SkI_5uQlfl.png)
-![image](https://hackmd.io/_uploads/HJFO9_XeGg.png)
-![image](https://hackmd.io/_uploads/rJ2O9_mlGe.png)
-![image](https://hackmd.io/_uploads/BJkYqOXxze.png)
-![image](https://hackmd.io/_uploads/ByzK9_mxMx.png)
-![image](https://hackmd.io/_uploads/BkrF9OQeMx.png)
-![image](https://hackmd.io/_uploads/SJ_Kqumefl.png)
-![image](https://hackmd.io/_uploads/rJTtcdXxze.png)
+![image](https://hackmd.io/_uploads/SyPzcd7lGe.png) <br />
+![image](https://hackmd.io/_uploads/BynGcO7xGl.png) <br />
+![image](https://hackmd.io/_uploads/By1Q5OXgGg.png) <br />
+![image](https://hackmd.io/_uploads/BJGm5dQeze.png) <br />
+![image](https://hackmd.io/_uploads/Bk_XcdQxze.png) <br />
+![image](https://hackmd.io/_uploads/Byim9OXefg.png) <br />
+![image](https://hackmd.io/_uploads/By6Qcdmxze.png) <br />
+![image](https://hackmd.io/_uploads/H1xEcuXlGx.png) <br />
+![image](https://hackmd.io/_uploads/BJX4cumxMx.png) <br />
+![image](https://hackmd.io/_uploads/HkBNcOmeGl.png) <br />
+![image](https://hackmd.io/_uploads/SkI_5uQlfl.png) <br />
+![image](https://hackmd.io/_uploads/HJFO9_XeGg.png) <br />
+![image](https://hackmd.io/_uploads/rJ2O9_mlGe.png) <br />
+![image](https://hackmd.io/_uploads/BJkYqOXxze.png) <br />
+![image](https://hackmd.io/_uploads/ByzK9_mxMx.png) <br />
+![image](https://hackmd.io/_uploads/BkrF9OQeMx.png) <br />
+![image](https://hackmd.io/_uploads/SJ_Kqumefl.png) <br />
+![image](https://hackmd.io/_uploads/rJTtcdXxze.png) <br />
 Why Classification Metrics Matter <br />
 * Classification metrics help evaluate how effectively a model can categorize instances.
 * Different metrics highlight strengths and weaknesses in model performance.
@@ -1970,39 +2042,39 @@ When to Use Cross-Validation <br />
 * When you want to ensure that your model is not overfitting or underfitting.
 * Cross-validation is also useful for model selection and
 hyperparameter tuning.
-![image](https://hackmd.io/_uploads/SJ6pqOXefg.png)
-![image](https://hackmd.io/_uploads/B110qOXlze.png)
-![image](https://hackmd.io/_uploads/S1zC9u7xzx.png)
-![image](https://hackmd.io/_uploads/BkHAcuXlGe.png)
-![image](https://hackmd.io/_uploads/SkdA5dXlMg.png)
-![image](https://hackmd.io/_uploads/HksRqumxfx.png)
-![image](https://hackmd.io/_uploads/rJ00q_Qefx.png)
-![image](https://hackmd.io/_uploads/rklyodmlzl.png)
-![image](https://hackmd.io/_uploads/B1S1jumlGe.png)
-![image](https://hackmd.io/_uploads/rJcgiOmxMl.png)
-![image](https://hackmd.io/_uploads/SyResuXgGx.png)
-![image](https://hackmd.io/_uploads/r1-WsdXeMx.png)
-![image](https://hackmd.io/_uploads/SJ4Wsd7lGl.png)
-![image](https://hackmd.io/_uploads/Hywbj_mxze.png)
-![image](https://hackmd.io/_uploads/rJYWo_mxzl.png)
-![image](https://hackmd.io/_uploads/rkoZjdQlGe.png)
-![image](https://hackmd.io/_uploads/SJAWsdmlGg.png)
-![image](https://hackmd.io/_uploads/S1gzsdmlfe.png)
-![image](https://hackmd.io/_uploads/H1QMo_7lMl.png)
-![image](https://hackmd.io/_uploads/B1bcidXlMl.png)
-![image](https://hackmd.io/_uploads/Hy7couQezl.png)
-![image](https://hackmd.io/_uploads/B1L5j_XlGl.png)
-![image](https://hackmd.io/_uploads/H1Css_Xefg.png)
-![image](https://hackmd.io/_uploads/Sy-hid7xfe.png)
-![image](https://hackmd.io/_uploads/Sy4nju7efx.png)
-![image](https://hackmd.io/_uploads/BkI3iO7xMg.png)
-![image](https://hackmd.io/_uploads/Skqho_mgfl.png)
-![image](https://hackmd.io/_uploads/HJ23id7lfl.png)
-![image](https://hackmd.io/_uploads/Hk1ao_Qxfl.png)
-![image](https://hackmd.io/_uploads/B1Paj_mlfg.png)
-![image](https://hackmd.io/_uploads/H1Yao_Qxfg.png)
-![image](https://hackmd.io/_uploads/Sk3asu7gfx.png)
-![image](https://hackmd.io/_uploads/SkApiuXgzg.png)
+![image](https://hackmd.io/_uploads/SJ6pqOXefg.png) <br />
+![image](https://hackmd.io/_uploads/B110qOXlze.png) <br />
+![image](https://hackmd.io/_uploads/S1zC9u7xzx.png) <br />
+![image](https://hackmd.io/_uploads/BkHAcuXlGe.png) <br />
+![image](https://hackmd.io/_uploads/SkdA5dXlMg.png) <br />
+![image](https://hackmd.io/_uploads/HksRqumxfx.png) <br />
+![image](https://hackmd.io/_uploads/rJ00q_Qefx.png) <br />
+![image](https://hackmd.io/_uploads/rklyodmlzl.png) <br />
+![image](https://hackmd.io/_uploads/B1S1jumlGe.png) <br />
+![image](https://hackmd.io/_uploads/rJcgiOmxMl.png) <br />
+![image](https://hackmd.io/_uploads/SyResuXgGx.png) <br />
+![image](https://hackmd.io/_uploads/r1-WsdXeMx.png) <br />
+![image](https://hackmd.io/_uploads/SJ4Wsd7lGl.png) <br />
+![image](https://hackmd.io/_uploads/Hywbj_mxze.png) <br />
+![image](https://hackmd.io/_uploads/rJYWo_mxzl.png) <br />
+![image](https://hackmd.io/_uploads/rkoZjdQlGe.png) <br />
+![image](https://hackmd.io/_uploads/SJAWsdmlGg.png) <br />
+![image](https://hackmd.io/_uploads/S1gzsdmlfe.png) <br />
+![image](https://hackmd.io/_uploads/H1QMo_7lMl.png) <br />
+![image](https://hackmd.io/_uploads/B1bcidXlMl.png) <br />
+![image](https://hackmd.io/_uploads/Hy7couQezl.png) <br />
+![image](https://hackmd.io/_uploads/B1L5j_XlGl.png) <br />
+![image](https://hackmd.io/_uploads/H1Css_Xefg.png) <br />
+![image](https://hackmd.io/_uploads/Sy-hid7xfe.png) <br />
+![image](https://hackmd.io/_uploads/Sy4nju7efx.png) <br />
+![image](https://hackmd.io/_uploads/BkI3iO7xMg.png) <br />
+![image](https://hackmd.io/_uploads/Skqho_mgfl.png) <br />
+![image](https://hackmd.io/_uploads/HJ23id7lfl.png) <br />
+![image](https://hackmd.io/_uploads/Hk1ao_Qxfl.png) <br />
+![image](https://hackmd.io/_uploads/B1Paj_mlfg.png) <br />
+![image](https://hackmd.io/_uploads/H1Yao_Qxfg.png) <br />
+![image](https://hackmd.io/_uploads/Sk3asu7gfx.png) <br />
+![image](https://hackmd.io/_uploads/SkApiuXgzg.png) <br />
 Data Transformation <br />
 * Data transformation techniques include methods, that may help to transform data before any machine learning algorithm is applied.
 * The goal is to remove the unnecessary data and highlight the most important aspects of the data to process.
@@ -2062,12 +2134,12 @@ Data Transformation- Projection <br />
 * Other transformation may involve general knowledge, e.g. holidays, day in a week, chemical atomic numbers, ...
 * Clustering may be another type of transformation that produces a new attribute.
 * Special kind of transformation is able to map data into lover dimension.
-![image](https://hackmd.io/_uploads/B1Gg3_Qgfg.png)
-![image](https://hackmd.io/_uploads/r1jx2uXgGl.png)
-![image](https://hackmd.io/_uploads/SkyW3_XxGe.png)
-![image](https://hackmd.io/_uploads/SJ--2_QlGg.png)
-![image](https://hackmd.io/_uploads/ry7ZhuXlfl.png)
-![image](https://hackmd.io/_uploads/SJuZh_QlGl.png)
+![image](https://hackmd.io/_uploads/B1Gg3_Qgfg.png) <br />
+![image](https://hackmd.io/_uploads/r1jx2uXgGl.png) <br />
+![image](https://hackmd.io/_uploads/SkyW3_XxGe.png) <br />
+![image](https://hackmd.io/_uploads/SJ--2_QlGg.png) <br />
+![image](https://hackmd.io/_uploads/ry7ZhuXlfl.png) <br />
+![image](https://hackmd.io/_uploads/SJuZh_QlGl.png) <br />
 
 ### 1.6) Sítě
 WIP JUMP na ZDS <br />
