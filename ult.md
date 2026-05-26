@@ -1100,6 +1100,71 @@ Architektura jako screeny z poliho skript:
 
 TODO fixnout nadpisy všude, ale zejména v této kapitole
 
+##### PJP
+https://i.imgur.com/uNzoMmV.png
+https://i.imgur.com/s9pxcHs.png
+https://i.imgur.com/lvMkZNC.png
+https://i.imgur.com/x1k0gLH.png
+https://i.imgur.com/RbloneI.png
+https://i.imgur.com/fBNk1i3.png
+https://i.imgur.com/18FurZn.png
+https://i.imgur.com/p5LsB2H.png
+https://i.imgur.com/f0qMZj2.png
+https://i.imgur.com/iUMFQ8A.png
+https://i.imgur.com/xIm8iIC.png
+https://i.imgur.com/RtZf5ET.png
+https://i.imgur.com/ehsZ8uf.png
+https://i.imgur.com/vdr0y85.png
+https://i.imgur.com/tUzyB01.png
+https://i.imgur.com/ZnjFp01.png
+https://i.imgur.com/GKTACIQ.png
+https://i.imgur.com/ujig0fC.png
+https://i.imgur.com/QfV3U9W.png
+https://i.imgur.com/4GQEVlY.png
+https://i.imgur.com/dCYPczT.png
+https://i.imgur.com/YMg0Xa1.png
+https://i.imgur.com/t1JwDd2.png
+https://i.imgur.com/v21wPka.png
+https://i.imgur.com/2mkO0C5.png
+https://i.imgur.com/maSCoaP.png
+https://i.imgur.com/jUFhEhi.png
+https://i.imgur.com/hphzLyC.png
+https://i.imgur.com/brj4Vql.png
+https://i.imgur.com/4Vjfdme.png
+https://i.imgur.com/FsTxeZV.png
+https://i.imgur.com/1OlBWLF.png
+https://i.imgur.com/iZdJMa6.png
+https://i.imgur.com/ZTKpSTq.png
+https://i.imgur.com/za48Gq9.png
+https://i.imgur.com/5t4Xmuy.png
+https://i.imgur.com/uMfrNJL.png
+https://i.imgur.com/3lF5jeN.png
+https://i.imgur.com/0vVn6Ma.png
+https://i.imgur.com/wYmkdOf.png
+https://i.imgur.com/OuqUTH0.png
+https://i.imgur.com/0jhanh3.png
+https://i.imgur.com/zw9ZLia.png
+https://i.imgur.com/Tk6G5CP.png
+https://i.imgur.com/nDpHZHg.png
+https://i.imgur.com/V0d6zpE.png
+https://i.imgur.com/RZyfoIh.png
+https://i.imgur.com/c5FVntJ.png
+https://i.imgur.com/JSvKy9r.png
+https://i.imgur.com/Cl0FmDZ.png
+https://i.imgur.com/xT6Jj2M.png
+https://i.imgur.com/DjGOuND.png
+https://i.imgur.com/HjcNvg8.png
+https://i.imgur.com/D0dPu4J.png
+https://i.imgur.com/7okxR8V.png
+https://i.imgur.com/EP846Mx.png
+https://i.imgur.com/zqzD4Sz.png
+https://i.imgur.com/ADdz8AO.png
+https://i.imgur.com/KOOU9fe.png
+https://i.imgur.com/2wEWexN.png
+https://i.imgur.com/v5cFvTY.png
+https://i.imgur.com/nEsEzGy.png
+https://i.imgur.com/dpazlOW.png
+
 ### Programka (OOP, JAVA, FPR, UPR, SKJ)
 Možná vztahy na DSka, ALG a jakési PJP, ZDS. Něco malinko z SWI stuff.
 
