@@ -2286,7 +2286,7 @@ Data Transformation- Projection <br />
 ![image](https://hackmd.io/_uploads/ry7ZhuXlfl.png) <br />
 ![image](https://hackmd.io/_uploads/SJuZh_QlGl.png) <br />
 
-### 1.7) Sítě
+### 1.7) Sítě a security related stuff
 WIP JUMP na ZDS <br />
 * Simplex, signál jedním směrem, např. TV broadcast
 * Half duplex, signál v obou směrech, ale jen one at a time, 2 way rádio, nebo Ethernet stanice propojené přes hub
@@ -2460,6 +2460,12 @@ WIP skok na grafy v DIM <br />
 * **Floyd:** Calculates routing tables for individual routers from a cost matrix of the network topology graph
 * **Ford-Fulkerson:** Calculates distances from all nodes to a given node In distributed version used as a basis of RIP <br />
 ![image](https://hackmd.io/_uploads/rkIEbj3yMg.png) <br />
+
+![image](https://hackmd.io/_uploads/SkFlU94xMg.png) <br />
+![image](https://hackmd.io/_uploads/rknxIcVeMe.png) <br />
+![image](https://hackmd.io/_uploads/rJkbU5VeGx.png) <br />
+![image](https://hackmd.io/_uploads/Hkf-U9Ngzg.png) <br />
+
 ##### VLSM
 [IPs a adresace zpátky](#####ADRESACE) <br />
 
@@ -2599,6 +2605,18 @@ WIP link na URI a URL z programka <br />
 ![image](https://hackmd.io/_uploads/SkOQOonyfl.png) <br />
 ![image](https://hackmd.io/_uploads/HJENuj3yMg.png) <br />
 ![image](https://hackmd.io/_uploads/S1krOi2JGe.png) <br />
+
+##### DNS stuff
+![image](https://hackmd.io/_uploads/rJeDycVgzl.png) <br />
+![image](https://hackmd.io/_uploads/rk4DJqNgzg.png) <br />
+![image](https://hackmd.io/_uploads/S1UD15Nefe.png) <br />
+![image](https://hackmd.io/_uploads/r1FvJ5EgMx.png) <br />
+![image](https://hackmd.io/_uploads/Hk3wJ9Eefx.png) <br />
+![image](https://hackmd.io/_uploads/r1J_19VeMg.png) <br />
+![image](https://hackmd.io/_uploads/BJbdJc4xMg.png) <br />
+WIP skok na IP
+WIP skok na security
+
 ##### TCP/UDP
 [ISO/OSI vrstvy zpátky](#####ISO/OSI) <br />
 ![image](https://hackmd.io/_uploads/rkDvdjnkze.png) <br />
@@ -2628,7 +2646,7 @@ Static translation of a (private) inside source address to a (global) address of
 ![image](https://hackmd.io/_uploads/rkUDvXkxMl.png) <br />
 ![image](https://hackmd.io/_uploads/r1hDvXJeMx.png) <br />
 
-NAT Disadvantages** <br />
+**NAT Disadvantages** <br />
 * Limits the universal connectivity... only clients may reside in the internal network... today's network designs take that into account
 * Stateful device in the data path, problem arises in case of the state information loss (e.g. NAT device reboot)
 * Problematic usage with asymmetric routing (e.g. the network connected to the outside world by more than 1 router), the incoming traffic may return through the other router than the corresponding outgoing traffic
@@ -2646,6 +2664,59 @@ Sending Window maintains the frames that were transmitted but not yet acknowledg
 ![image](https://hackmd.io/_uploads/SJhbwm1xMe.png) <br />
 ![image](https://hackmd.io/_uploads/BJQfw71eGe.png) <br />
 WIP
+
+##### WIFI
+**WIFI SECURITY V DALSI PODKAPITOLE!!!**
+![image](https://hackmd.io/_uploads/SJ-9454eMl.png) <br />
+![image](https://hackmd.io/_uploads/ry_9V9NgMg.png) <br />
+![image](https://hackmd.io/_uploads/ByIsV94gfl.png) <br />
+![image](https://hackmd.io/_uploads/B1z2Nc4xfe.png) <br />
+![image](https://hackmd.io/_uploads/HJEnE9ExGg.png) <br />
+![image](https://hackmd.io/_uploads/BJK3NcVlzg.png) <br />
+![image](https://hackmd.io/_uploads/rJn2Nq4gzl.png) <br />
+![image](https://hackmd.io/_uploads/ry1TNcVlzx.png) <br />
+![image](https://hackmd.io/_uploads/HkdAEqNlfe.png) <br />
+![image](https://hackmd.io/_uploads/SJhRV9EgGl.png) <br />
+![image](https://hackmd.io/_uploads/ByANr9Nlze.png) <br />
+![image](https://hackmd.io/_uploads/Sk1HHc4lGx.png) <br />
+WIP LINK NA ISO OSI
+![image](https://hackmd.io/_uploads/ByvUH5Nlfe.png) <br />
+![image](https://hackmd.io/_uploads/ry1DSqNxfl.png) <br />
+![image](https://hackmd.io/_uploads/HkwDBcVlGx.png) <br />
+![image](https://hackmd.io/_uploads/HkowHcExMl.png) <br />
+![image](https://hackmd.io/_uploads/SJyOS5NeMe.png) <br />
+![image](https://hackmd.io/_uploads/BkG_r5VxGe.png) <br />
+
+##### Security
+![image](https://hackmd.io/_uploads/ryKEeqVxMg.png) <br />
+![image](https://hackmd.io/_uploads/BJ0ElqNeGx.png) <br />
+![image](https://hackmd.io/_uploads/rJOrxcVeMl.png) <br />
+![image](https://hackmd.io/_uploads/r1MUgcVgMx.png) <br />
+![image](https://hackmd.io/_uploads/Sk9IxqVxze.png) <br />
+![image](https://hackmd.io/_uploads/SJPDg5Vlfg.png) <br />
+WIP link na OSI vrstvy
+![image](https://hackmd.io/_uploads/ByBOeqVlzl.png) <br />
+![image](https://hackmd.io/_uploads/HJ2_ec4lfl.png) <br />
+![image](https://hackmd.io/_uploads/rk1tlq4lMl.png) <br />
+![image](https://hackmd.io/_uploads/rJQFx54xMe.png) <br />
+![image](https://hackmd.io/_uploads/rypQ-94lMe.png) <br />
+![image](https://hackmd.io/_uploads/By8V-9Vlzg.png) <br />
+![image](https://hackmd.io/_uploads/HylzW9Nlfx.png) <br />
+![image](https://hackmd.io/_uploads/SkXB-q4xfg.png) <br />
+![image](https://hackmd.io/_uploads/B1eU-qNgMe.png) <br />
+![image](https://hackmd.io/_uploads/BkAUW5VlMx.png) <br />
+WIP link to NAT
+![image](https://hackmd.io/_uploads/ryAaZc4lGl.png) <br />
+![image](https://hackmd.io/_uploads/ryfR-5VlGe.png) <br />
+![image](https://hackmd.io/_uploads/HJ8RW54eze.png) <br />
+![image](https://hackmd.io/_uploads/ryUqQc4eGg.png) <br />
+![image](https://hackmd.io/_uploads/rkc9Xq4lMe.png) <br />
+![image](https://hackmd.io/_uploads/HkOnX5Nxzg.png) <br />
+![image](https://hackmd.io/_uploads/Bk5n75VeMx.png) <br />
+![image](https://hackmd.io/_uploads/S1R279Vefe.png) <br />
+![image](https://hackmd.io/_uploads/rya0m54eGl.png) <br />
+![image](https://hackmd.io/_uploads/HyWJE54lzx.png) <br />
+WIP link na databáze kde PL/SQL neparametrizované
 
 ### 1.8) Databáze
 ##### DB_START
@@ -2992,6 +3063,9 @@ WIP skok na programko <br />
 ![image](https://hackmd.io/_uploads/Bye4veTyfg.png) <br />
 ![image](https://hackmd.io/_uploads/Byj4vxTJGg.png) <br />
 ![image](https://hackmd.io/_uploads/SJVHwxT1zg.png) <br />
+
+##### Vázané proměnné / Bound variables:
+concat of strings kinda avoids an unbound variable problem, but the variable is not actually passed or evaluated in the engine and it opens the possibility of an sql injection. all variables in static or dynamic sql are bound, or u get an error
 ##### JMENNY
 Balíky mají podobnou funkci jako knihovny případně jmenné prostory (namespace) v jiných programovacích jazycích.
 Seskupují PL/SQL objekty (funkce, procedury, proměnné, výjimky atd.) do jednoho jmenného prostoru. <br />
