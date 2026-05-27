@@ -896,13 +896,13 @@ WIP skok ZDS znaménka, dvojkový doplněk, hex
 WIP skok na boolean al.
 WIP skok na APPS obvody
 
-https://i.imgur.com/UmKko8Y.png
-https://i.imgur.com/hHKHysn.png
-https://i.imgur.com/DWIvZzj.png
-https://i.imgur.com/WN7MRK5.png
-https://i.imgur.com/H7qhoRB.png
-https://i.imgur.com/rKgrLJ2.png
-https://i.imgur.com/ulUuQRG.png
+![image](https://i.imgur.com/UmKko8Y.png) <br />
+![image](https://i.imgur.com/hHKHysn.png) <br />
+![image](https://i.imgur.com/DWIvZzj.png) <br />
+![image](https://i.imgur.com/WN7MRK5.png) <br />
+![image](https://i.imgur.com/H7qhoRB.png) <br />
+![image](https://i.imgur.com/rKgrLJ2.png) <br />
+![image](https://i.imgur.com/ulUuQRG.png) <br />
 WIP skok na podmíněný skok v APPS
 WIP skok na architekturu bo ALU
 Kodovani zapornych cisel a flagy souvisi takto:
@@ -911,10 +911,10 @@ https://i.imgur.com/oLfRc5t.png
 BTW problém dvojí nuly, kladné a záporné, u přímé a inverzní reprezentace, proto ustoupily doplnku.
 Ještě jednou pro klarifikaci: Přímý, inverzní, doplňkový a posunutý kód nejsou různé druhy čísel, ale různé způsoby interpretace stejných bitů, které umožňují CPU provádět stejné binární operace a až následně určit, jaký má výsledek matematický význam.
 
-https://i.imgur.com/YHStcko.png
-https://i.imgur.com/r6dj5Eo.png
-https://i.imgur.com/bppqcln.png
-https://i.imgur.com/8QYm2G1.png
+![image](https://i.imgur.com/YHStcko.png) <br />
+![image](https://i.imgur.com/r6dj5Eo.png) <br />
+![image](https://i.imgur.com/bppqcln.png) <br />
+![image](https://i.imgur.com/8QYm2G1.png) <br />
 
 Pro znak známe označení char, jsou zde ofc zahrnuty symboly. Znak je v PC reprezentován pomocí celého čísla, ale jsou zakodovány. Pro kodování používáme sadu ASCII s národním rozšířením, jedná se o historickou reprezentaci 128 zákl. znaků v 7 bitech, v paměti se teda pracuje s celým bytem, tedy 8 bits, přičemž 8. zůstane nulový, jinak bychom měli 256 znaků (pokud teda nemluvíme o rozšířeních ASCII), příklad: 'A' → 65 → 01000001, kdy sčítáme hodnoty mocnin těch bits. Pak máme Unicode, což je ale jen tabulka, kde obyčejné znaky, zajímavé symboly a třeba emojis reprezentujeme nějakým hexadec. kodem, ale neříká nic o tom, jak se ukládá do paměti, jde fakt spíš jen o lookup, abychom věděli, jak se takové emoji uloží, musíme použít UTF standardy, jako třeba UTF-8, jenž je i zpětně kompatibilní s ASCII. Pro reprezentaci kódového bodu unicode podle současných standardů postačí 21 bitů. Jazyky co napřímo nepoužívají Unicode, třeba PHP, mohou pracovat s unicode zakodovaným po bajtech právě pomocí kodování UTF-8. UTF-8 je proměnlivé (1–4 bajty), UTF-16 používá 2 nebo 4 bajty a UTF-32 vždy 4 bajty. ASCII je podmnožina Unicode. Jak teda funguje UTF-8 s Unicode? Hexadecimál se převede na decimál / binární číslo a podle toho se UTF rozhodne, jaký počet bajtů použije dle rozsahu toho decimálu, 0 až 127 je ofc vhodné pro 1 bajt, nad 128 ale do 2047 použije bajty 2 a pak do nějakých 65 tisíc 3 bajty a dál 4... Binární reprezentace toho Unicode se teda doplní do 16 bits a rozdělí dle šablony na 4,6,6 bits, i když je třeba vybrán 3 bajtový UTF formát, protože zbylých 8 bits je pak prefix s řídícími bity, i.e. kolik bajtů má teda znak a jak se má číst.
 
@@ -922,7 +922,7 @@ Mezi neordinální datové typy řadíme realné čísla, jelikož u nich těžk
 
 ![image](https://i.imgur.com/lUg5v9v.png) <br />
 ![image](https://i.imgur.com/xPemU9T.png) <br />
-https://i.imgur.com/txn5COC.png
+![image](https://i.imgur.com/txn5COC.png) <br />
 
 ### 1.2) APPS, OSY
 ##### OBVODY_TRANZISTORY
@@ -1254,45 +1254,59 @@ Architektura jako screeny z poliho skript: <br />
 TODO fixnout nadpisy všude po docu
 
 #### D. Komunikace, sběrnice, DMA, apod.
-https://i.imgur.com/r16ku22.png
-https://i.imgur.com/bWWHF27.png
-https://i.imgur.com/VqtDk6y.png
-https://i.imgur.com/8RDNaP5.png
-https://i.imgur.com/Go5dHnU.png
-https://i.imgur.com/0qGMtfJ.png
-https://i.imgur.com/EEdeGH3.png
-https://i.imgur.com/5MGi6uV.png
-https://i.imgur.com/vS7EfOu.png
-https://i.imgur.com/G9npUMX.png
-https://i.imgur.com/6iNsVYo.png
-https://i.imgur.com/IoR1SOh.png
-https://i.imgur.com/Lr8ldL5.png
-https://i.imgur.com/xxSV60U.png
-https://i.imgur.com/lzss8ni.png
-https://i.imgur.com/ofKcCy4.png
-https://i.imgur.com/gFA0sha.png
-https://i.imgur.com/3CpITlO.png
+![image](https://i.imgur.com/r16ku22.png) <br />
+![image](https://i.imgur.com/bWWHF27.png) <br />
+![image](https://i.imgur.com/VqtDk6y.png) <br />
+![image](https://i.imgur.com/8RDNaP5.png) <br />
+![image](https://i.imgur.com/Go5dHnU.png) <br />
+![image](https://i.imgur.com/0qGMtfJ.png) <br />
+![image](https://i.imgur.com/EEdeGH3.png) <br />
+![image](https://i.imgur.com/5MGi6uV.png) <br />
+![image](https://i.imgur.com/vS7EfOu.png) <br />
+![image](https://i.imgur.com/G9npUMX.png) <br />
+![image](https://i.imgur.com/6iNsVYo.png) <br />
+![image](https://i.imgur.com/IoR1SOh.png) <br />
+![image](https://i.imgur.com/Lr8ldL5.png) <br />
+![image](https://i.imgur.com/xxSV60U.png) <br />
+![image](https://i.imgur.com/lzss8ni.png) <br />
+![image](https://i.imgur.com/ofKcCy4.png) <br />
+![image](https://i.imgur.com/gFA0sha.png) <br />
+![image](https://i.imgur.com/3CpITlO.png) <br />
 
 #### E. Monitory
-https://i.imgur.com/YXtt02M.png
-https://i.imgur.com/7Z6bZDQ.png
-https://i.imgur.com/k6187oL.png
-https://i.imgur.com/YCkiNFe.png
-https://i.imgur.com/uzgaRNH.png
-![image](https://hackmd.io/_uploads/HyaNDF4eMx.png)
-https://i.imgur.com/hTJTUeb.png
-https://i.imgur.com/ozvhSHN.png
-https://i.imgur.com/kOjAWpu.png
-https://i.imgur.com/JUgd5f0.png
-https://i.imgur.com/U6DzCZ0.png
-https://i.imgur.com/Kx1DPkf.png
-https://i.imgur.com/qXzOk1v.png
-https://i.imgur.com/4oaokIp.png
-https://i.imgur.com/nSzdlyu.png
-https://i.imgur.com/aoLwsyQ.png
-https://i.imgur.com/PbG4tFo.png
+![image](https://i.imgur.com/YXtt02M.png) <br />
+![image](https://i.imgur.com/7Z6bZDQ.png) <br />
+![image](https://i.imgur.com/k6187oL.png) <br />
+![image](https://i.imgur.com/YCkiNFe.png) <br />
+![image](https://i.imgur.com/uzgaRNH.png) <br />
+![image](https://hackmd.io/_uploads/HyaNDF4eMx.png) <br />
+![image](https://i.imgur.com/hTJTUeb.png) <br />
+![image](https://i.imgur.com/ozvhSHN.png) <br />
+![image](https://i.imgur.com/kOjAWpu.png) <br />
+![image](https://i.imgur.com/JUgd5f0.png) <br />
+![image](https://i.imgur.com/U6DzCZ0.png) <br />
+![image](https://i.imgur.com/Kx1DPkf.png) <br />
+![image](https://i.imgur.com/qXzOk1v.png) <br />
+![image](https://i.imgur.com/4oaokIp.png) <br />
+![image](https://i.imgur.com/nSzdlyu.png) <br />
+![image](https://i.imgur.com/aoLwsyQ.png) <br />
+![image](https://i.imgur.com/PbG4tFo.png) <br />
 
 #### F. CUDA
+![image](https://hackmd.io/_uploads/ByGtPtVlMe.png) <br />
+![image](https://hackmd.io/_uploads/r1xaFPFVxMx.png) <br />
+![image](https://hackmd.io/_uploads/rJU9PYVxzl.png) <br />
+![image](https://hackmd.io/_uploads/BJxivYNxMg.png) <br />
+![image](https://hackmd.io/_uploads/rktivtNlzx.png) <br />
+![image](https://hackmd.io/_uploads/ByMnvKNlGe.png) <br />
+![image](https://hackmd.io/_uploads/ryF3DKVeMe.png) <br />
+![image](https://hackmd.io/_uploads/S1ETvFEeMe.png) <br />
+![image](https://hackmd.io/_uploads/HJCTDYExfl.png) <br />
+![image](https://hackmd.io/_uploads/B1o0wK4lMg.png) <br />
+![image](https://hackmd.io/_uploads/rk7k_FElGe.png) <br />
+![image](https://hackmd.io/_uploads/HJF1_tElMl.png) <br />
+![image](https://hackmd.io/_uploads/S1bg_F4xMe.png) <br />
+![image](https://hackmd.io/_uploads/rkDedFElzx.png) <br />
 
 ### 1.3) PJP
 ![image](https://i.imgur.com/uNzoMmV.png) <br />
@@ -1390,8 +1404,8 @@ Void, specialita, nenabývá žádné hodnoty, ale slouží mimo jiné pro dekla
 V některých jazycích existuje rovněž prázdná hodnota ošetřující neplatný výsledek – null nebo nil, která je vlastně současně zvláštním datovým typem. Výsledkem většiny operací s konstantou nil je opět nil, takže chování programu je deterministické. Konstanta NULL vyskytující se v jazyce C tento význam nemá, při jejím nevhodném zpracování může snadno dojít k nepředvídatelnému chování programu, které při nedokonalém operačním systému může vést až ke zhroucení počítače.
 WIP skok na UTI
 
-https://i.imgur.com/X6Wc9at.png
-https://i.imgur.com/I0fxrh5.png
+![image](https://i.imgur.com/X6Wc9at.png) <br />
+![image](https://i.imgur.com/I0fxrh5.png) <br />
 
 Generický datový typ zastupuje více datových typů, jde o způsob parametrizace.
 
@@ -1461,16 +1475,16 @@ Metody zápisu algoritmu při jeho návrhu (pokrač.)
 Programovací jazyk
 * další možný způsob zápisu
 * tento zápis považován spíše za implementaci
-![image](https://hackmd.io/_uploads/BkKl9tmgze.png)
-![image](https://hackmd.io/_uploads/Sk2gqt7lfl.png)
-![image](https://hackmd.io/_uploads/HJlZ9YXgfx.png)
-![image](https://hackmd.io/_uploads/HJMbqtQgzl.png)
-![image](https://hackmd.io/_uploads/ByHb5FmeGe.png)
-![image](https://hackmd.io/_uploads/SydZcKXxGg.png)
-![image](https://hackmd.io/_uploads/B1jW9Y7xMg.png)
-![image](https://hackmd.io/_uploads/S16W5t7lMl.png)
-![image](https://hackmd.io/_uploads/SJeGqKmlGg.png)
-![image](https://hackmd.io/_uploads/BkXGctmgGg.png)
+![image](https://hackmd.io/_uploads/BkKl9tmgze.png) <br />
+![image](https://hackmd.io/_uploads/Sk2gqt7lfl.png) <br />
+![image](https://hackmd.io/_uploads/HJlZ9YXgfx.png) <br />
+![image](https://hackmd.io/_uploads/HJMbqtQgzl.png) <br />
+![image](https://hackmd.io/_uploads/ByHb5FmeGe.png) <br />
+![image](https://hackmd.io/_uploads/SydZcKXxGg.png) <br />
+![image](https://hackmd.io/_uploads/B1jW9Y7xMg.png) <br />
+![image](https://hackmd.io/_uploads/S16W5t7lMl.png) <br />
+![image](https://hackmd.io/_uploads/SJeGqKmlGg.png) <br />
+![image](https://hackmd.io/_uploads/BkXGctmgGg.png) <br />
 Efektivita implementace (pokrač.)
 * Hledání stále lepšího a lepšího algoritmu zajímavé mentální dobrodružství...
 * Otázkou je kdy přestat. Dokonalost je drahý luxus. Inženýrský přístup – zdroje alokované pro projekt.
@@ -1482,48 +1496,48 @@ problémy – nelze je řešit jakýmkoliv algoritmem.
 Efektivita implementace (pokrač.)
 * Naštěstí většinu problémů z praktického života lze
 algoritmicky řešit. Dobrý algoritmus je výsledkem opakovaného úsilí a několikanásobného přepracovávání.
-![image](https://hackmd.io/_uploads/r1AQqtXlMe.png)
-![image](https://hackmd.io/_uploads/r1WVqt7eMe.png)
-![image](https://hackmd.io/_uploads/rk7N5F7gGx.png)
-![image](https://hackmd.io/_uploads/HkUN5tmgfg.png)
-![image](https://hackmd.io/_uploads/Skq45KQgzl.png)
-![image](https://hackmd.io/_uploads/HyR4qYQgGx.png)
-![image](https://hackmd.io/_uploads/Sylr5Kmlze.png)
-![image](https://hackmd.io/_uploads/S1eU5FXgfl.png)
-![image](https://hackmd.io/_uploads/HJXUcFQeGx.png)
-![image](https://hackmd.io/_uploads/SkULcFmxMx.png)
-![image](https://hackmd.io/_uploads/Hkvv9tXgMx.png)
-![image](https://hackmd.io/_uploads/Hy5v5Kmgzx.png)
-![image](https://hackmd.io/_uploads/Bk3DqK7eMx.png)
-![image](https://hackmd.io/_uploads/ry1O9FmlGl.png)
-![image](https://hackmd.io/_uploads/HyzdcK7xGl.png)
-![image](https://hackmd.io/_uploads/r1H_qFQefg.png)
-![image](https://hackmd.io/_uploads/SJuu5FQeGl.png)
-![image](https://hackmd.io/_uploads/Hk5_5F7gfe.png)
-![image](https://hackmd.io/_uploads/rJ0_5YXgGl.png)
-![image](https://hackmd.io/_uploads/S1ZYctmgfe.png)
-![image](https://hackmd.io/_uploads/S1N0hKXlGx.png)
-![image](https://hackmd.io/_uploads/Hyw0hKXlfx.png)
-![image](https://hackmd.io/_uploads/B1FA2KQgGe.png)
-![image](https://hackmd.io/_uploads/B1CC3FQeGe.png)
-![image](https://hackmd.io/_uploads/SJlyTF7gGg.png)
-![image](https://hackmd.io/_uploads/ryX1aFQgMe.png)
-![image](https://hackmd.io/_uploads/BkBy6tmxGl.png)
-![image](https://hackmd.io/_uploads/SJdJ6Kmlfx.png)
-![image](https://hackmd.io/_uploads/rJs1pY7eMl.png)
-![image](https://hackmd.io/_uploads/BkAJpYXlfe.png)
-![image](https://hackmd.io/_uploads/SJBl6KXezl.png)
-![image](https://hackmd.io/_uploads/rJuxpKmlGg.png)
-![image](https://hackmd.io/_uploads/HJjxat7lMe.png)
-![image](https://hackmd.io/_uploads/SyplTFXlfx.png)
-![image](https://hackmd.io/_uploads/rJJW6K7lMx.png)
-![image](https://hackmd.io/_uploads/BJz-6tXeze.png)
-![image](https://hackmd.io/_uploads/ryEWpFXgGl.png)
-![image](https://hackmd.io/_uploads/HkvZTK7eGl.png)
-![image](https://hackmd.io/_uploads/rJYZTKmeGg.png)
-![image](https://hackmd.io/_uploads/Skn-6Ymxzx.png)
-![image](https://hackmd.io/_uploads/rJWzat7lfl.png)
-![image](https://hackmd.io/_uploads/S1NGaYmxGg.png)
+![image](https://hackmd.io/_uploads/r1AQqtXlMe.png) <br />
+![image](https://hackmd.io/_uploads/r1WVqt7eMe.png) <br />
+![image](https://hackmd.io/_uploads/rk7N5F7gGx.png) <br />
+![image](https://hackmd.io/_uploads/HkUN5tmgfg.png) <br />
+![image](https://hackmd.io/_uploads/Skq45KQgzl.png) <br />
+![image](https://hackmd.io/_uploads/HyR4qYQgGx.png) <br />
+![image](https://hackmd.io/_uploads/Sylr5Kmlze.png) <br />
+![image](https://hackmd.io/_uploads/S1eU5FXgfl.png) <br />
+![image](https://hackmd.io/_uploads/HJXUcFQeGx.png) <br />
+![image](https://hackmd.io/_uploads/SkULcFmxMx.png) <br />
+![image](https://hackmd.io/_uploads/Hkvv9tXgMx.png) <br />
+![image](https://hackmd.io/_uploads/Hy5v5Kmgzx.png) <br />
+![image](https://hackmd.io/_uploads/Bk3DqK7eMx.png) <br />
+![image](https://hackmd.io/_uploads/ry1O9FmlGl.png) <br />
+![image](https://hackmd.io/_uploads/HyzdcK7xGl.png) <br />
+![image](https://hackmd.io/_uploads/r1H_qFQefg.png) <br />
+![image](https://hackmd.io/_uploads/SJuu5FQeGl.png) <br />
+![image](https://hackmd.io/_uploads/Hk5_5F7gfe.png) <br />
+![image](https://hackmd.io/_uploads/rJ0_5YXgGl.png) <br />
+![image](https://hackmd.io/_uploads/S1ZYctmgfe.png) <br />
+![image](https://hackmd.io/_uploads/S1N0hKXlGx.png) <br />
+![image](https://hackmd.io/_uploads/Hyw0hKXlfx.png) <br />
+![image](https://hackmd.io/_uploads/B1FA2KQgGe.png) <br />
+![image](https://hackmd.io/_uploads/B1CC3FQeGe.png) <br />
+![image](https://hackmd.io/_uploads/SJlyTF7gGg.png) <br />
+![image](https://hackmd.io/_uploads/ryX1aFQgMe.png) <br />
+![image](https://hackmd.io/_uploads/BkBy6tmxGl.png) <br />
+![image](https://hackmd.io/_uploads/SJdJ6Kmlfx.png) <br />
+![image](https://hackmd.io/_uploads/rJs1pY7eMl.png) <br />
+![image](https://hackmd.io/_uploads/BkAJpYXlfe.png) <br />
+![image](https://hackmd.io/_uploads/SJBl6KXezl.png) <br />
+![image](https://hackmd.io/_uploads/rJuxpKmlGg.png) <br />
+![image](https://hackmd.io/_uploads/HJjxat7lMe.png) <br />
+![image](https://hackmd.io/_uploads/SyplTFXlfx.png) <br />
+![image](https://hackmd.io/_uploads/rJJW6K7lMx.png) <br />
+![image](https://hackmd.io/_uploads/BJz-6tXeze.png) <br />
+![image](https://hackmd.io/_uploads/ryEWpFXgGl.png) <br />
+![image](https://hackmd.io/_uploads/HkvZTK7eGl.png) <br />
+![image](https://hackmd.io/_uploads/rJYZTKmeGg.png) <br />
+![image](https://hackmd.io/_uploads/Skn-6Ymxzx.png) <br />
+![image](https://hackmd.io/_uploads/rJWzat7lfl.png) <br />
+![image](https://hackmd.io/_uploads/S1NGaYmxGg.png) <br />
 Analýza algoritmů
 Co analyzovat?
 * správnost
