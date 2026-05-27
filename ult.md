@@ -1004,11 +1004,25 @@ Součástky CCD mají rozsáhlejší použití v analogové technice jako pamět
 ![image](https://hackmd.io/_uploads/HyMnHd31fl.png) <br />
 ![image](https://hackmd.io/_uploads/BJB3Bd3kfx.png) <br />
 
-TODO proč jsou dobré některé elektrické vlastnosti a u čeho, tabulka? co se z čeho vyrábí nebo vyrábělo
+Dulezite vlastnosti a elektro pojmy, co jsem si vypsal a co znamenaji, bot mi to dal pak do tabulky:
+![image](https://hackmd.io/_uploads/S1TYiFEeMl.png)
+![image](https://hackmd.io/_uploads/B1QpjFNeMl.png)
+![image](https://hackmd.io/_uploads/SJ5CitVxze.png)
+Nízká spotřeba dobrá protože méně tepla, delší výdrž, vyšší hustota tranzistorů. Proto CMOS dominoval u moderních CPU.
 
-TODO boolean
+Vysoká spínací rychlost dobrá protože vyšší frekvence procesoru a rychlejší logika. ECL bylo extrémně rychlé, nebyla saturace.
+
+Malá parazitní kapacita dobrá protože méně opoždění, čiže rychlejší změna stavu. Proto SOI/SOS zvyšuje výkon.
+
+Nízká výstupní impedance dobrá protože výstup lépe udrží logickou úroveň + menší vliv rušení. TTL mělo lepší výstupní vlastnosti než DTL. AVSAK vysoká vstupni impedance dobra protoze téměř žádný vstupní proud a malá spotřeba pro MOSFET/CMOS.
+
+Šumová imunita důležitá protože reálné vodiče nejsou ideální a ofc, rušení může převrátit bit. CMOS a TTL mají lepší odolnost než ECL.
+
 ##### A.III: Boolean algebra:
 ##### BOOLEAN
+![image](https://i.imgur.com/EVtYNYl.png) <br />
+![image](https://i.imgur.com/5oBmvN6.png) <br />
+![image](https://i.imgur.com/B77h99k.png) <br />
 [Logika jump](#####LOGIKA_START) <br />
 
 #### B. Paměti
