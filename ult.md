@@ -24,6 +24,7 @@ Pokud se setkáte s termínem "horní / dolní" část realného čísla, jedná
 ##### LOGIKA_START
 [Aplikace teorie v DB](#####DATABAZE_TEORIE_NORMALOVE_FORMY) <br />
 ![image](https://hackmd.io/_uploads/BJcaGJ91Mg.png) <br />
+![image](https://hackmd.io/_uploads/HJtrhqNxfg.png) <br />
 **Axiomy, které třeba platí v lineární algebře. IMPORTANT SI JE ZAPAMATOVAT, CO JE CO, zrovna na toto neodkazuju neustále při každém mention.**
 
 K dokazování něčeho potřebujeme věty, tady je pevně spjatá logika a matematika. V matice **P -> D**, kde **P** jsou **přesně formulované předpoklady**, za kterých **platí** nějaké **tvrzení D**. Ekvivalentní terminologie disciplín
@@ -154,6 +155,8 @@ Relace je na mnozine castecne usporadani, pokud plati: <br />
 ![image](https://hackmd.io/_uploads/H16nay9kGl.png) <br />
 **NOTE zde menší rovno má být symbol podmnožiny!!** <br />
 **Když částečné uspořádání nemá neporovnatelné prvky, okamžitě se z něho stává uplne / lineární uspořádání, kde jde vše porovnat.** <br />
+
+![image](https://hackmd.io/_uploads/S1uhs54gMl.png) <br />
 
 ![image](https://hackmd.io/_uploads/Bky8ke5kze.png) <br />
 #### C. Funkce
@@ -859,7 +862,7 @@ WIP nekde skok na grafy a na algoritmy <br />
 [Paměti HW se zásobníkem](#####HW_PAMET) <br />
 WIP skok na programko zasobnik <br />
 
-### 3.1) UTI ultimate Aplikace matematicko-logických záležitostí:
+### 3.1) Aplikace matematicko-logických záležitostí:
 #### A. LA
 ##### A.I: Čistě geometricky:
 * Osová, středová souměrnost - čára mezi dvěma body prochází originem, který je ve středu oné čáry NEBO přímka (osa) a k ní kolmá čára spojující zase dva body, střed té čáry na ose
@@ -1769,6 +1772,172 @@ TODO chybí Strategie řešení iterativním zlepšováním DALE 8 images <br />
 ![image](https://i.imgur.com/xvTnp9F.png) <br />
 TODO KONEC chybí Meze možností algoritmického řešení problémů. P, NP a NP-úplné problémy.chybí Zdolávání mezí možností algoritmického řešení problémů <br />
 WIP skoky mezi UTI a jinýma tu budou <br />
+
+Z pohledu UTI: <br />
+WIP skok na UTI <br />
+WIP skok na grafy <br />
+![image](https://hackmd.io/_uploads/SykMa5VlGx.png) <br />
+![image](https://hackmd.io/_uploads/rkbMTqVeMx.png) <br />
+![image](https://hackmd.io/_uploads/ByHGT9Elfe.png) <br />
+![image](https://hackmd.io/_uploads/r1Dfaq4eMx.png) <br />
+![image](https://hackmd.io/_uploads/H1cGT5ElMx.png) <br />
+![image](https://hackmd.io/_uploads/rypfp5NxMx.png) <br />
+![image](https://hackmd.io/_uploads/S1g7T94gMx.png) <br />
+![image](https://hackmd.io/_uploads/Hy7ma9Vlfl.png) <br />
+![image](https://hackmd.io/_uploads/HJ_XTc4xMl.png) <br />
+![image](https://hackmd.io/_uploads/HyfJXiNxzg.png) <br />
+![image](https://hackmd.io/_uploads/rkFJ7i4gGe.png) <br />
+![image](https://hackmd.io/_uploads/BylemoVxfe.png) <br />
+![image](https://hackmd.io/_uploads/BJaemj4eGe.png) <br />
+![image](https://hackmd.io/_uploads/rJMbms4xfg.png) <br />
+![image](https://hackmd.io/_uploads/HkKWQj4xMg.png) <br />
+![image](https://hackmd.io/_uploads/SJ8z7jNlzg.png) <br />
+![image](https://hackmd.io/_uploads/BkaGmsNgGg.png) <br />
+![image](https://hackmd.io/_uploads/S1P7XjElGx.png) <br />
+![image](https://hackmd.io/_uploads/SJ14miVlzl.png) <br />
+![image](https://hackmd.io/_uploads/Hkv4Qi4ezg.png) <br />
+![image](https://hackmd.io/_uploads/HJcBXjEefx.png) <br />
+![image](https://hackmd.io/_uploads/H1xImi4gGe.png) <br />
+![image](https://hackmd.io/_uploads/S15LmjVlzg.png) <br />
+![image](https://hackmd.io/_uploads/B1bDQiNlGx.png) <br />
+![image](https://hackmd.io/_uploads/rJDP7j4gGg.png) <br />
+![image](https://hackmd.io/_uploads/S1x_Qj4eze.png) <br />
+![image](https://hackmd.io/_uploads/Byvums4xGg.png) <br />
+![image](https://hackmd.io/_uploads/rJkKXjVgzl.png) <br />
+![image](https://hackmd.io/_uploads/BJLFms4eMl.png) <br />
+![image](https://hackmd.io/_uploads/S1itQjNxGl.png) <br />
+![image](https://hackmd.io/_uploads/BJl5XjNxfg.png) <br />
+![image](https://hackmd.io/_uploads/Syuc7sNgGg.png) <br />
+![image](https://hackmd.io/_uploads/SkgsQjEgfg.png) <br />
+![image](https://hackmd.io/_uploads/ByLjXoEeMx.png) <br />
+![image](https://hackmd.io/_uploads/BJajXsNxze.png) <br />
+![image](https://hackmd.io/_uploads/B1v37i4gze.png) <br />
+![image](https://hackmd.io/_uploads/ryT2moEeGe.png) <br />
+![image](https://hackmd.io/_uploads/rkEaXj4eMl.png) <br />
+![image](https://hackmd.io/_uploads/HkFaXsNefg.png) <br />
+![image](https://hackmd.io/_uploads/ryCTXsNxfx.png) <br />
+![image](https://hackmd.io/_uploads/S1y1NsNxGg.png) <br />
+![image](https://hackmd.io/_uploads/BkDyEjVlzx.png) <br />
+![image](https://hackmd.io/_uploads/BJ61NoNeGl.png) <br />
+
+Vypocetni slozitost: <br />
+![image](https://hackmd.io/_uploads/r1ZQViVgzx.png) <br />
+![image](https://hackmd.io/_uploads/ByjXVsEgze.png) <br />
+WIP skok na RAM a Turing stroj <br />
+![image](https://hackmd.io/_uploads/SJj4EsNgMl.png) <br />
+![image](https://hackmd.io/_uploads/HJMrVj4xGg.png) <br />
+![image](https://hackmd.io/_uploads/rkKHEoVeGl.png) <br />
+![image](https://hackmd.io/_uploads/rJ-IViVlMe.png) <br />
+![image](https://hackmd.io/_uploads/Sk_INsVgze.png) <br />
+![image](https://hackmd.io/_uploads/BJRINsEeGx.png) <br />
+![image](https://hackmd.io/_uploads/SJLPNj4xMl.png) <br />
+![image](https://hackmd.io/_uploads/HJ6DNsElGe.png) <br />
+![image](https://hackmd.io/_uploads/Byr_VsNlfe.png) <br />
+![image](https://hackmd.io/_uploads/By2u4sEgGe.png) <br />
+![image](https://hackmd.io/_uploads/Bk7K4j4gGe.png) <br />
+![image](https://hackmd.io/_uploads/SkctNjNgzx.png) <br />
+![image](https://hackmd.io/_uploads/S1V5EoVlMe.png) <br />
+![image](https://hackmd.io/_uploads/Hkic4j4xfg.png) <br />
+![image](https://hackmd.io/_uploads/rkVj4iEeMg.png) <br />
+![image](https://hackmd.io/_uploads/rJosVoEgMl.png) <br />
+![image](https://hackmd.io/_uploads/SkG3Vi4eGg.png) <br />
+![image](https://hackmd.io/_uploads/S1j3NjVefx.png) <br />
+![image](https://hackmd.io/_uploads/S1zaEsEgMx.png) <br />
+![image](https://hackmd.io/_uploads/rytaVs4eGg.png) <br />
+![image](https://hackmd.io/_uploads/B1JRNoEgfg.png) <br />
+![image](https://hackmd.io/_uploads/BJwCVsEgGx.png) <br />
+![image](https://hackmd.io/_uploads/Sy2RVjElze.png) <br />
+![image](https://hackmd.io/_uploads/B1tJBsEezx.png) <br />
+![image](https://hackmd.io/_uploads/ryxgHsEgfx.png) <br />
+![image](https://hackmd.io/_uploads/SyDeSj4eze.png) <br />
+![image](https://hackmd.io/_uploads/rk6lri4lMg.png) <br />
+
+Analyza: <br />
+![image](https://hackmd.io/_uploads/BJwuBs4gzx.png) <br />
+![image](https://hackmd.io/_uploads/S1WtHoElGe.png) <br />
+![image](https://hackmd.io/_uploads/ryttSjVeMg.png) <br />
+![image](https://hackmd.io/_uploads/B1k5HjNlMe.png) <br />
+![image](https://hackmd.io/_uploads/S1v5rjNgMe.png) <br />
+![image](https://hackmd.io/_uploads/B109riVxMl.png) <br />
+![image](https://hackmd.io/_uploads/rkUoSoVezg.png) <br />
+![image](https://hackmd.io/_uploads/SJpiSiNeGg.png) <br />
+![image](https://hackmd.io/_uploads/ryE2riExzl.png) <br />
+![image](https://hackmd.io/_uploads/ByT3Hj4xMl.png) <br />
+![image](https://hackmd.io/_uploads/H1LprjVgGg.png) <br />
+![image](https://hackmd.io/_uploads/Bk10SiVeMg.png) <br />
+![image](https://hackmd.io/_uploads/rkICHi4ezg.png) <br />
+![image](https://hackmd.io/_uploads/SJhCHoNeGl.png) <br />
+![image](https://hackmd.io/_uploads/Sy4yLj4gfe.png) <br />
+![image](https://hackmd.io/_uploads/Hk51LjExzg.png) <br />
+![image](https://hackmd.io/_uploads/HkZlIiVeze.png) <br />
+![image](https://hackmd.io/_uploads/B1UlLsVxGg.png) <br />
+![image](https://hackmd.io/_uploads/BJAe8iElfe.png) <br />
+![image](https://hackmd.io/_uploads/HJEZLiNezg.png) <br />
+![image](https://hackmd.io/_uploads/SJK-8jNxfe.png) <br />
+![image](https://hackmd.io/_uploads/H1MGUiNxfl.png) <br />
+![image](https://hackmd.io/_uploads/SJtGIs4gfx.png) <br />
+![image](https://hackmd.io/_uploads/SkWQLsNgzl.png) <br />
+![image](https://hackmd.io/_uploads/SkhQLsVxfe.png) <br />
+![image](https://hackmd.io/_uploads/Sy4V8i4eze.png) <br />
+![image](https://hackmd.io/_uploads/rkAV8sEgzg.png) <br />
+![image](https://hackmd.io/_uploads/Bk6SLiExGl.png) <br />
+![image](https://hackmd.io/_uploads/rJDU8i4eGx.png) <br />
+![image](https://hackmd.io/_uploads/Sk0LLsNgGe.png) <br />
+WIP skok na grafy
+
+Nerozhodnutelne problemy a NP plne: <br />
+![image](https://hackmd.io/_uploads/B1jYLsNlGl.png) <br />
+![image](https://hackmd.io/_uploads/rkHpIsExMg.png) <br />
+![image](https://hackmd.io/_uploads/Sk2TUsNgzl.png) <br />
+![image](https://hackmd.io/_uploads/SyfAIsEefl.png) <br />
+![image](https://hackmd.io/_uploads/ByYRUs4lGg.png) <br />
+![image](https://hackmd.io/_uploads/HkZ1DjVgMx.png) <br />
+![image](https://hackmd.io/_uploads/SkvJDoNxMl.png) <br />
+![image](https://hackmd.io/_uploads/rJRyDsVxze.png) <br />
+![image](https://hackmd.io/_uploads/SJBgPs4gMg.png) <br />
+![image](https://hackmd.io/_uploads/Sk2gDiNxMe.png) <br />
+![image](https://hackmd.io/_uploads/ry4ZvsVgze.png) <br />
+![image](https://hackmd.io/_uploads/By3ZwiVeMl.png) <br />
+![image](https://hackmd.io/_uploads/HJWfPiExGl.png) <br />
+![image](https://hackmd.io/_uploads/SyYGPj4eGl.png) <br />
+![image](https://hackmd.io/_uploads/Sy17Ps4ezg.png) <br />
+![image](https://hackmd.io/_uploads/H1IQPiExze.png) <br />
+![image](https://hackmd.io/_uploads/ryhXDsVgfe.png) <br />
+![image](https://hackmd.io/_uploads/HkrEwoNeMg.png) <br />
+![image](https://hackmd.io/_uploads/H10NDo4xfg.png) <br />
+![image](https://hackmd.io/_uploads/HkLHPiVxMl.png) <br />
+![image](https://hackmd.io/_uploads/r16HDoNgMe.png) <br />
+![image](https://hackmd.io/_uploads/ry48vo4eMe.png) <br />
+![image](https://hackmd.io/_uploads/B138PoExzg.png) <br />
+<img width="550" height="1231" alt="image" src="https://github.com/user-attachments/assets/2b913004-ae13-4789-892d-7ab542a9c3cd" /> <br />
+<img width="548" height="1240" alt="image" src="https://github.com/user-attachments/assets/6d34643d-11b0-4b09-8ad6-fcbae815b82a" /> <br />
+<img width="548" height="1205" alt="image" src="https://github.com/user-attachments/assets/d11f3e65-b342-45c1-8403-ed8515dca68b" /> <br />
+<img width="548" height="705" alt="image" src="https://github.com/user-attachments/assets/f21015b7-8e21-4cab-b80f-113faef69f41" /> <br />
+![image](https://hackmd.io/_uploads/Hy2H9nVgMx.png) <br />
+![image](https://hackmd.io/_uploads/B1_8924xzx.png) <br />
+![image](https://hackmd.io/_uploads/r1fDq3NxMx.png) <br />
+![image](https://hackmd.io/_uploads/BJFPc24xfe.png) <br />
+![image](https://hackmd.io/_uploads/B1-u93Vlzl.png) <br />
+![image](https://hackmd.io/_uploads/B1pOchVgfg.png) <br />
+![image](https://hackmd.io/_uploads/B1dY9nEgfx.png) <br />
+![image](https://hackmd.io/_uploads/SJc9q24lfe.png) <br />
+![image](https://hackmd.io/_uploads/H1cs9nEefx.png) <br />
+![image](https://hackmd.io/_uploads/HJ-2qhEgfg.png) <br />
+![image](https://hackmd.io/_uploads/By229nVxzl.png) <br />
+![image](https://hackmd.io/_uploads/SyE69hNxGe.png) <br />
+![image](https://hackmd.io/_uploads/ByhTchVgMl.png) <br />
+![image](https://hackmd.io/_uploads/SkUA53Vefx.png) <br />
+![image](https://hackmd.io/_uploads/Ske1in4xze.png) <br />
+![image](https://hackmd.io/_uploads/HyXgsn4lMg.png) <br />
+![image](https://hackmd.io/_uploads/rkXEs3Vlfl.png) <br />
+![image](https://hackmd.io/_uploads/BksVohVlzl.png) <br />
+![image](https://hackmd.io/_uploads/HkmBsh4lfg.png) <br />
+![image](https://hackmd.io/_uploads/rktrsh4gzx.png) <br />
+![image](https://hackmd.io/_uploads/r1WUj2Vezx.png) <br />
+![image](https://hackmd.io/_uploads/rJqUjn4gfx.png) <br />
+![image](https://hackmd.io/_uploads/BJWvi3Eezx.png) <br />
+![image](https://hackmd.io/_uploads/H1iwsnExMx.png) <br />
+![image](https://hackmd.io/_uploads/ryzuinNlMl.png) <br />
 
 ### 1.6) ZSU
 Machine Learning:
@@ -3018,6 +3187,27 @@ WIP skok na OSY paging <br />
 Matcher to hotfix to release to develop to feature to feature <br />
 ![image](https://hackmd.io/_uploads/ryOKfph1ze.png) <br />
 
+**Fyz. implementace relač. modelu**
+![image](https://hackmd.io/_uploads/BkWfqcElMx.png) <br />
+![image](https://hackmd.io/_uploads/SJVM554gMx.png) <br />
+![image](https://hackmd.io/_uploads/ryuzq5Eeze.png) <br />
+![image](https://hackmd.io/_uploads/r1k75cNlzg.png) <br />
+![image](https://hackmd.io/_uploads/B1o799Vgfg.png) <br />
+![image](https://hackmd.io/_uploads/H1yEcqEezg.png) <br />
+![image](https://hackmd.io/_uploads/SJfE9c4lGl.png) <br />
+![image](https://hackmd.io/_uploads/rJerc9EgMx.png) <br />
+![image](https://hackmd.io/_uploads/HyVH9qVlGx.png) <br />
+![image](https://hackmd.io/_uploads/HJFrccVgGe.png) <br />
+![image](https://hackmd.io/_uploads/B1hroc4xMg.png) <br />
+![image](https://hackmd.io/_uploads/H1yUjqNlzx.png) <br />
+![image](https://hackmd.io/_uploads/HJmLo5NgGg.png) <br />
+![image](https://hackmd.io/_uploads/rkIUscVlMx.png) <br />
+![image](https://hackmd.io/_uploads/Hy_Ioc4gGx.png) <br />
+![image](https://hackmd.io/_uploads/ByiUjcExMe.png) <br />
+![image](https://hackmd.io/_uploads/H1TLo9NlMl.png) <br />
+![image](https://hackmd.io/_uploads/SJxwo5NeGl.png) <br />
+![image](https://hackmd.io/_uploads/ByfPi9NlMx.png) <br />
+
 PL/SQL věci: <br />
 ![image](https://hackmd.io/_uploads/BJr_Bx6kMg.png) <br />
 ![image](https://hackmd.io/_uploads/H1gVtrlayfg.png) <br />
@@ -3146,7 +3336,51 @@ Korektní stav databáze, potvrzovací bod ...
   BEGIN TRANSACTION, vrací tedy databázi k předchozímu
   potvrzovacímu bodu (tedy do korektního stavu).
 
-[Skok na ACID jelikož je relevantní právě pro transakce](######ACID) <br />
+###### ACID
+A - atomičnost (atomicity) – transakce musí být atomická: jsou provedeny všechny operace transakce nebo žádná.
+C - korektnost (correctness) – transakce převádí korektní stav databáze do jiného korektního stavu databáze; mezi začátkem a koncem transakce nemusí být databáze v korektním stavu.
+I - izolovanost (isolation) – transakce jsou navzájem izolovány: změny provedené jednou transakcí jsou pro ostatní transakce viditelné až po provedení COMMIT.
+D - trvalost (durability) – jakmile je transakce potvrzena, změny v databázi se stávají trvalými i po globální chybě.
+
+Transakce umožňuje provést ROLLBACK, pokud není vykonána celá (A). <br />
+Pokud běží v DBS více transakcí, jsou navzájem izolovány, tj neovlivňují své výsledky (I). <br />
+Umožňuje zotavení databáze v případě globální chyby (např. při výpadku serveru) (D). <br />
+
+![image](https://hackmd.io/_uploads/ry_jYq4gzx.png) <br />
+![image](https://hackmd.io/_uploads/Hk6JD54lGl.png) <br />
+![image](https://hackmd.io/_uploads/rJDlD5Vxfg.png) <br />
+![image](https://hackmd.io/_uploads/Hyr-D54eMl.png) <br />
+![image](https://hackmd.io/_uploads/H1jZPc4xzg.png) <br />
+![image](https://hackmd.io/_uploads/BkWMvc4gMg.png) <br />
+![image](https://hackmd.io/_uploads/ryPGwcVefx.png) <br />
+![image](https://hackmd.io/_uploads/SydvwqNeGg.png) <br />
+![image](https://hackmd.io/_uploads/Skqww54eze.png) <br />
+![image](https://hackmd.io/_uploads/HkaPD9EeMg.png) <br />
+![image](https://hackmd.io/_uploads/HJHdvqEezx.png) <br />
+![image](https://hackmd.io/_uploads/HJ_1uqExzx.png) <br />
+![image](https://hackmd.io/_uploads/By6kO9Vxfl.png) <br />
+![image](https://hackmd.io/_uploads/Hy-gdq4eMg.png) <br />
+![image](https://hackmd.io/_uploads/SkLeuc4lzg.png) <br />
+![image](https://hackmd.io/_uploads/HJTZu5Exfg.png) <br />
+![image](https://hackmd.io/_uploads/S1uQ_cVeGe.png) <br />
+![image](https://hackmd.io/_uploads/SkiXOcNlfl.png) <br />
+![image](https://hackmd.io/_uploads/SyyId5ElGl.png) <br />
+![image](https://hackmd.io/_uploads/H1zUuc4xfx.png) <br />
+![image](https://hackmd.io/_uploads/SkBUdcNxMl.png) <br />
+![image](https://hackmd.io/_uploads/ByFiucVlMe.png) <br />
+![image](https://hackmd.io/_uploads/B1JnO9Eezl.png) <br />
+![image](https://hackmd.io/_uploads/rJBhOq4ezg.png) <br />
+![image](https://hackmd.io/_uploads/SyUJt54lMg.png) <br />
+![image](https://hackmd.io/_uploads/rkclF9NxMe.png) <br />
+![image](https://hackmd.io/_uploads/rJ3gK9VxMx.png) <br />
+![image](https://hackmd.io/_uploads/rkHSY94eMx.png) <br />
+![image](https://hackmd.io/_uploads/ByvBYc4gfx.png) <br />
+![image](https://hackmd.io/_uploads/H1iSK5NeMg.png) <br />
+![image](https://hackmd.io/_uploads/SyprF94efg.png) <br />
+![image](https://hackmd.io/_uploads/rkjdtqNxzx.png) <br />
+![image](https://hackmd.io/_uploads/HyCdKqVxfx.png) <br />
+![image](https://hackmd.io/_uploads/SyMKt9VeGg.png) <br />
+![image](https://hackmd.io/_uploads/HJHttcElfg.png) <br />
 
 **Klasifikace chyb při provádění transakcí:** <br />
 Lokální chyby: chyba v dotazu, přetečení hodnoty atributu.
@@ -3271,20 +3505,6 @@ MongoDB, Redis, Voldemort, atp.
 
 Scale out - NewSQL databázové systémy se snaží zvýšit požadavek na konzistenci dat na možné maximum při zachování relačního datového modelu SQL. Obvykle se snaží i o zachování maxima z požadavků ACID (ne vše je možné). <br />
 VoltDB, MemSQL, ...
-
-###### ACID
-A - atomičnost (atomicity) – transakce musí být atomická: jsou provedeny všechny operace transakce nebo žádná.
-C - korektnost (correctness) – transakce převádí korektní stav databáze do jiného korektního stavu databáze; mezi začátkem a koncem transakce nemusí být databáze v korektním stavu.
-I - izolovanost (isolation) – transakce jsou navzájem izolovány: změny provedené jednou transakcí jsou pro ostatní transakce viditelné až po provedení COMMIT.
-D - trvalost (durability) – jakmile je transakce potvrzena, změny v databázi se stávají trvalými i po globální chybě.
-
-Transakce umožňuje provést ROLLBACK, pokud není vykonána celá (A). <br />
-Pokud běží v DBS více transakcí, jsou navzájem izolovány, tj neovlivňují své výsledky (I). <br />
-Umožňuje zotavení databáze v případě globální chyby (např. při výpadku serveru) (D). <br />
-
-[Zpátky na transakce](######TRANSAKCE) <br />
-
-TODO race conditions, ...
 
 In-memory: <br />
 Rozdělení dle požadavků na pamet. Tradiční databázové systémy byly navrženy s ohledem na klasickou architekturu Disk-Pamet-CPU. Nicméně dnes cena pamětí neustále klesá, když není AI krize, nezapomenout poděkovat miliardářovi dneska... Teda ehm, již nejsou vyjímkou servery se stovkami GB  <br />
