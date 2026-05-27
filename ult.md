@@ -450,8 +450,85 @@ Zleva doprava a shora dole pricitani. <br />
 ![image](https://hackmd.io/_uploads/B1_z5Q5JMg.png) <br />
 ![image](https://hackmd.io/_uploads/rJPB5m5kzl.png) <br />
 
+##### DIM
 #### Grafy, izomorfismus, souvislosti, komponenty, metriky, kostry, barevnost, rovinnost, sítě A STROMY
 + Hledání v grafech, Euler, Hamilton, ... <br />
+WIP skok na algoritmy
+WIP skok na stromy v PRG
+![image](https://hackmd.io/_uploads/Hk-KMp4gGx.png) <br />
+![image](https://hackmd.io/_uploads/Skmtz6Vgzg.png) <br />
+![image](https://hackmd.io/_uploads/rk8tMa4xze.png) <br />
+![image](https://hackmd.io/_uploads/SJttf6Vgze.png) <br />
+![image](https://hackmd.io/_uploads/ry3YfTNgzg.png) <br />
+![image](https://hackmd.io/_uploads/HJzsz6VxGl.png) <br />
+![image](https://hackmd.io/_uploads/Sy8izp4eGl.png) <br />
+![image](https://hackmd.io/_uploads/rkFjGTVgfl.png) <br />
+![image](https://hackmd.io/_uploads/H1osGpVxzx.png) <br />
+![image](https://hackmd.io/_uploads/H1Jhfa4gGl.png) <br />
+WIP skok na matice <br />
+![image](https://hackmd.io/_uploads/BJS6f6Egfx.png) <br />
+![image](https://hackmd.io/_uploads/H1zCGpExMl.png) <br />
+![image](https://hackmd.io/_uploads/HJRCzpEgMl.png) <br />
+![image](https://hackmd.io/_uploads/BJDk764gzg.png) <br />
+![image](https://hackmd.io/_uploads/BJVx7aVxfx.png) <br />
+![image](https://hackmd.io/_uploads/Synl7aNxGx.png) <br />
+![image](https://hackmd.io/_uploads/Bk8-XTVgze.png) <br />
+![image](https://hackmd.io/_uploads/B1bfQa4lGe.png) <br />
+![image](https://hackmd.io/_uploads/BJjzXaEgzl.png) <br />
+![image](https://hackmd.io/_uploads/Sk-7X64gfg.png) <br />
+![image](https://hackmd.io/_uploads/SkoVmp4gzg.png) <br />
+Euler. grafy: <br />
+![image](https://hackmd.io/_uploads/r1kIQTEefx.png) <br />
+![image](https://hackmd.io/_uploads/rJLIQTNefe.png) <br />
+Hamilton. grafy: <br />
+![image](https://hackmd.io/_uploads/H1GvXp4lfg.png) <br />
+![image](https://hackmd.io/_uploads/Bk-O7aVefx.png) <br />
+![image](https://hackmd.io/_uploads/Sk9_7TNeMl.png) <br />
+![image](https://hackmd.io/_uploads/H1StmT4gzl.png) <br />
+![image](https://hackmd.io/_uploads/Hky5XaVlfx.png) <br />
+![image](https://hackmd.io/_uploads/H1UqQT4xze.png) <br />
+![image](https://hackmd.io/_uploads/Skxi7p4lfl.png) <br />
+![image](https://hackmd.io/_uploads/rkbh7aEgze.png) <br />
+![image](https://hackmd.io/_uploads/HJy6m6EeGg.png) <br />
+![image](https://hackmd.io/_uploads/B1q6mpNeze.png) <br />
+![image](https://hackmd.io/_uploads/SyQCmT4lfe.png) <br />
+![image](https://hackmd.io/_uploads/BJt0XpVeMl.png) <br />
+![image](https://hackmd.io/_uploads/HJ7k46Nezl.png) <br />
+![image](https://hackmd.io/_uploads/H1d1E6Vefe.png) <br />
+![image](https://hackmd.io/_uploads/Hk3JV6Nlzl.png) <br />
+![image](https://hackmd.io/_uploads/SJpNETEefg.png) <br />
+![image](https://hackmd.io/_uploads/SyWHNTEgMx.png) <br />
+![image](https://hackmd.io/_uploads/rJrHNT4lfl.png) <br />
+![image](https://hackmd.io/_uploads/SkOHVTEeMe.png) <br />
+![image](https://hackmd.io/_uploads/HkirEaExfl.png) <br />
+![image](https://hackmd.io/_uploads/Byb8ETNxGg.png) <br />
+![image](https://hackmd.io/_uploads/B1jw4T4lze.png) <br />
+![image](https://hackmd.io/_uploads/rk_OET4lMe.png) <br />
+![image](https://hackmd.io/_uploads/ByauNaNgfx.png) <br />
+![image](https://hackmd.io/_uploads/SkMY4a4eMg.png) <br />
+![image](https://hackmd.io/_uploads/SyW5NTNeMg.png) <br />
+![image](https://hackmd.io/_uploads/HyT9N64xzg.png) <br />
+![image](https://hackmd.io/_uploads/rkSiNT4efl.png) <br />
+![image](https://hackmd.io/_uploads/Sk2s4TNxzx.png) <br />
+![image](https://hackmd.io/_uploads/ryUnNT4lMe.png) <br />
+![image](https://hackmd.io/_uploads/ryThNa4gzl.png) <br />
+![image](https://hackmd.io/_uploads/BkbT4pNlMe.png) <br />
+![image](https://hackmd.io/_uploads/ryqpV6Ngzl.png) <br />
+![image](https://hackmd.io/_uploads/H1H04aExGl.png) <br />
+![image](https://hackmd.io/_uploads/SykkHaVgGx.png) <br />
+![image](https://hackmd.io/_uploads/HkF1H6VlMx.png) <br />
+![image](https://hackmd.io/_uploads/S1ygBaNlGg.png) <br />
+![image](https://hackmd.io/_uploads/rJceB6NxMl.png) <br />
+![image](https://hackmd.io/_uploads/HJrZrT4gMx.png) <br />
+![image](https://hackmd.io/_uploads/HymzBaVlfg.png) <br />
+![image](https://hackmd.io/_uploads/S1kXSpVefx.png) <br />
+![image](https://hackmd.io/_uploads/HkjXBa4gGg.png) <br />
+![image](https://hackmd.io/_uploads/SyqNrTEgfl.png) <br />
+![image](https://hackmd.io/_uploads/HJa4HTNeMl.png) <br />
+![image](https://hackmd.io/_uploads/B1yrBpVlGe.png) <br />
+![image](https://hackmd.io/_uploads/B1nrBa4lze.png) <br />
+![image](https://hackmd.io/_uploads/Bk0rBaVeGx.png) <br />
+![image](https://hackmd.io/_uploads/HJZIBpEgfg.png) <br />
 WIP LINK NA ALG <br />
 
 ### 1.7) Matice, lineární rovnice a nerovnice s aproximací, hodnost, determinant, spektrální teorie
