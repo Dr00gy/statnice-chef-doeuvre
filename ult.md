@@ -884,7 +884,47 @@ sin cos <br />
 ## Praktická část
 Zde budou zpětné linky na matiku / logiku pro případ nouze, kdy žáček zapomene, o co vlastně šlo.
 
-### 1.1) APPS, OSY, ZDS
+### 1.1) ZDS
+Bit je nejzákladnější unit of information v počítači a digitální komunikaci, bit reprezentuje logický status, 1 a 0, neboli on a off, protože mezistav by nemusel být stabilní, vzhledem k natuře elektřiny. Ekvivalence flip flop, 2 pozice electrical switch, ale hlavně 2 distinktní urovne voltage / current v obvodu, případně 2 urovne light intenzity nebo 2 směry magnetizmu či polarizace, orientace 2 stranded DNA apod. A contiguous group of binary digits is called a bit string, a bit vector or a single/multi dimensional bit array. 8 bits jsou ekvivalentní 1 byte. Frequently, half, full, double and quadruple words consist of a number of bytes which is a low power of two. A string of four bits is usually a nibble. A byte is the smallest addressable unit of memory in many computer architectures. Z network protokolů k němu muzeme referovat jako octet. Those bits in an octet are usually counted with numbering from 0 to 7 or 7 to 0 depending on the bit endianness, ten souvisí s bit numbering, tedy konvence, která se používá pro identifikaci bit. pozic v binárním čísle. Bity v binárním čísle mohou být v memory bytu, ve slově nebo v CPU registru, v data busu. Least significant bit "upe vpravo", zatímco Most je vizualizován jako vlevo, jde o least a most significant digits v decimálním integeru (popis níže). Bitová indexace v notaci base 2, není afektován tím, jak je hodnota uložena na zařízení přímo fyzicky, i.e. jako byte order nějaké hodnoty na disku, ale je to property binarity samotné, což se utilizuje v bit shifting pro vytváření čísla tak, že se na "n" pozici objeví 1 a všude jinde 0. Meaning individuálních bits je zachován, i když to číslo je uložené v reverse order.
+
+![image](https://i.imgur.com/KQyJn59.png) <br />
+
+Prog. jazyky mohou rozlišovat integery s nebo bez znamének, jejich zápis může být i hexadecimální. Pokud je celé znaménkové číslo omezeno například na 16 bitů, tak bude mít rozsah -32768 až +32767, což je dané kódováním ve dvojkovém doplňkovém kódu. Pokud výsledek operace překročí rozsah, dochází (32767 + 1 dá -32768). Některé jazyky, třeba Python, místo přetečení vyhradí větší memory, ale to snižuje výkon programu. Znaménková i bezznaménková čísla při běžném kódování vytvářejí algebraický okruh. Krom alg. operací lze na intu dělat i bitové operace jako logický součin, součet a negace, LOGICKE operace jako takové se provádí nad jednotlivými bity operandů v dvojkové reprezentaci, ALE POZOR, v rámci jedné instrukce se BITWISE OPERACE provádí jakoby nad dvěma vektory bitů naráz.
+true && true = true (logical) zatímco 0111 & 0110 = 0110 (bitwise), v bool algebře vždy logical, v praxi číslicové obvody provedou bitwise prvně a logical potom.
+WIP skok na LA bo okruh
+WIP skok ZDS znaménka, dvojkový doplněk, hex
+WIP skok na boolean al.
+WIP skok na APPS obvody
+
+https://i.imgur.com/UmKko8Y.png
+https://i.imgur.com/hHKHysn.png
+https://i.imgur.com/DWIvZzj.png
+https://i.imgur.com/WN7MRK5.png
+https://i.imgur.com/H7qhoRB.png
+https://i.imgur.com/rKgrLJ2.png
+https://i.imgur.com/ulUuQRG.png
+WIP skok na podmíněný skok v APPS
+WIP skok na architekturu bo ALU
+Kodovani zapornych cisel a flagy souvisi takto:
+Čísla jsou v počítači reprezentována různými kódy (přímý, inverzní, doplňkový a posunutá nula), které určují, jak mají být stejné bity interpretovány, zejména, zda a jak se pracuje se znaménkem. V praxi se používá hlavně doplňkový kód, protože sjednocuje sčítání a odčítání na jednu operaci v ALU, zatímco přímý a inverzní kód komplikují aritmetiku kvůli nejednoznačné nule a nutnosti speciálního zacházení s přenosem. Samotná ALU pak pracuje pouze se základními operacemi jako sčítání, odčítání a bitové posuny, přičemž bit shifting odpovídá násobení a dělení mocninami dvou a zároveň ovlivňuje tok bitů mezi pozicemi registru. Při těchto operacích vzniká carry flag, který signalizuje fyzický přenos bitu mimo rozsah registru a je klíčový zejména pro unsigned aritmetiku a víceregi­strové výpočty, zatímco overflow flag sleduje správnost výsledku v doplňkovém kódu a indikuje situaci, kdy výsledek se znaménkem už nedává matematicky smysl. Na základě těchto příznaků CPU provádí podmíněné skoky, které rozhodují o dalším toku programu... unsigned větvení se řídí carry flagem, signed větvení overflow flagem, tím se propojuje reprezentace čísel, samotné výpočty i řízení programu do jednoho celku.
+https://i.imgur.com/oLfRc5t.png
+BTW problém dvojí nuly, kladné a záporné, u přímé a inverzní reprezentace, proto ustoupily doplnku.
+Ještě jednou pro klarifikaci: Přímý, inverzní, doplňkový a posunutý kód nejsou různé druhy čísel, ale různé způsoby interpretace stejných bitů, které umožňují CPU provádět stejné binární operace a až následně určit, jaký má výsledek matematický význam.
+
+https://i.imgur.com/YHStcko.png
+https://i.imgur.com/r6dj5Eo.png
+https://i.imgur.com/bppqcln.png
+https://i.imgur.com/8QYm2G1.png
+
+Pro znak známe označení char, jsou zde ofc zahrnuty symboly. Znak je v PC reprezentován pomocí celého čísla, ale jsou zakodovány. Pro kodování používáme sadu ASCII s národním rozšířením, jedná se o historickou reprezentaci 128 zákl. znaků v 7 bitech, v paměti se teda pracuje s celým bytem, tedy 8 bits, přičemž 8. zůstane nulový, jinak bychom měli 256 znaků (pokud teda nemluvíme o rozšířeních ASCII), příklad: 'A' → 65 → 01000001, kdy sčítáme hodnoty mocnin těch bits. Pak máme Unicode, což je ale jen tabulka, kde obyčejné znaky, zajímavé symboly a třeba emojis reprezentujeme nějakým hexadec. kodem, ale neříká nic o tom, jak se ukládá do paměti, jde fakt spíš jen o lookup, abychom věděli, jak se takové emoji uloží, musíme použít UTF standardy, jako třeba UTF-8, jenž je i zpětně kompatibilní s ASCII. Pro reprezentaci kódového bodu unicode podle současných standardů postačí 21 bitů. Jazyky co napřímo nepoužívají Unicode, třeba PHP, mohou pracovat s unicode zakodovaným po bajtech právě pomocí kodování UTF-8. UTF-8 je proměnlivé (1–4 bajty), UTF-16 používá 2 nebo 4 bajty a UTF-32 vždy 4 bajty. ASCII je podmnožina Unicode. Jak teda funguje UTF-8 s Unicode? Hexadecimál se převede na decimál / binární číslo a podle toho se UTF rozhodne, jaký počet bajtů použije dle rozsahu toho decimálu, 0 až 127 je ofc vhodné pro 1 bajt, nad 128 ale do 2047 použije bajty 2 a pak do nějakých 65 tisíc 3 bajty a dál 4... Binární reprezentace toho Unicode se teda doplní do 16 bits a rozdělí dle šablony na 4,6,6 bits, i když je třeba vybrán 3 bajtový UTF formát, protože zbylých 8 bits je pak prefix s řídícími bity, i.e. kolik bajtů má teda znak a jak se má číst.
+
+Mezi neordinální datové typy řadíme realné čísla, jelikož u nich těžko jednoznačně určíme předchůdce a následovníka. Real. číslo také nazveme číslo s plovoucí čárkou, implementován v dvojkové soustavě (základ exponentu je 2 a stejně jak už bylo zmíněno, používáme číslice 0 a 1), ale ne všechny realná čísla se dají takto přesně reprezentovat a pak mohou v počítači nastat neintuitivní chování, např. slavné JS 0.1 + 0.2 nám dá 0.30000000000000004, jelikož v binární soustavě se jedná o nekonečný periodický rozvoj, to se pak řeší absolutními hodnotami a ofc, prací s celými čísly. Dále máme i soustavu desítkovou a šestnáctkovou. Ve stejné velikosti paměti mají větší rozsah hodnot, než celé číslo, ale to má pak za důsledek horší přesnost u velkých čísel (což často nevadí) a vyšší nároky na architekturu CPU, je toho schopen skrze to, že ukládání konkrétního čísla napřímo je nahrazeno rozkladem na znaménko (1 bit), exponent (8 bit) a mantisu (23 bit), když se jedná o 32 bit float. Samotný exponent o 8 bitech má rezervovanou polovinu pro záporné exponenty a druhou polovinu pro ty kladné. Nepřesnost floatu pak pochází z mantisy, která určuje "jemnost" popisu toho actual čísla, s 23 bity je ta přesnost substantially vymezena. Mantisa je vynásobena základem soustavy umocněným na exponent, což odpovídá posunutí desetinné čárky z její původní pozice v mantise o počet míst odpovídající hodnotě exponentu: doprava, je-li exponent kladný, doleva, je-li záporný. BTW poloha desetinné čárky se předpokládá přímo za nejvýznamější číslicí a nebo napravo od nejméně významné číslice. Reálná čísla v počítači mohou také nabývat speciálních hodnot, které reprezentují neplatné výsledky. Pro reprezentaci reálných čísel se většinou používají některé z formátů definovaných ve standardu IEEE 754.
+
+![image](https://i.imgur.com/lUg5v9v.png) <br />
+![image](https://i.imgur.com/xPemU9T.png) <br />
+https://i.imgur.com/txn5COC.png
+
+### 1.2) APPS, OSY
 ##### OBVODY_TRANZISTORY
 #### A. Ciselne obvody a bool.
 [Skok rovnou na V/V brány spojené s pravdivostními hodnotami](#####OBVODY_TRANZISTORY) <br />
@@ -1213,7 +1253,48 @@ Architektura jako screeny z poliho skript: <br />
 
 TODO fixnout nadpisy všude po docu
 
-### 1.2) PJP
+#### D. Komunikace, sběrnice, DMA, apod.
+https://i.imgur.com/r16ku22.png
+https://i.imgur.com/bWWHF27.png
+https://i.imgur.com/VqtDk6y.png
+https://i.imgur.com/8RDNaP5.png
+https://i.imgur.com/Go5dHnU.png
+https://i.imgur.com/0qGMtfJ.png
+https://i.imgur.com/EEdeGH3.png
+https://i.imgur.com/5MGi6uV.png
+https://i.imgur.com/vS7EfOu.png
+https://i.imgur.com/G9npUMX.png
+https://i.imgur.com/6iNsVYo.png
+https://i.imgur.com/IoR1SOh.png
+https://i.imgur.com/Lr8ldL5.png
+https://i.imgur.com/xxSV60U.png
+https://i.imgur.com/lzss8ni.png
+https://i.imgur.com/ofKcCy4.png
+https://i.imgur.com/gFA0sha.png
+https://i.imgur.com/3CpITlO.png
+
+#### E. Monitory
+https://i.imgur.com/YXtt02M.png
+https://i.imgur.com/7Z6bZDQ.png
+https://i.imgur.com/k6187oL.png
+https://i.imgur.com/YCkiNFe.png
+https://i.imgur.com/uzgaRNH.png
+![image](https://hackmd.io/_uploads/HyaNDF4eMx.png)
+https://i.imgur.com/hTJTUeb.png
+https://i.imgur.com/ozvhSHN.png
+https://i.imgur.com/kOjAWpu.png
+https://i.imgur.com/JUgd5f0.png
+https://i.imgur.com/U6DzCZ0.png
+https://i.imgur.com/Kx1DPkf.png
+https://i.imgur.com/qXzOk1v.png
+https://i.imgur.com/4oaokIp.png
+https://i.imgur.com/nSzdlyu.png
+https://i.imgur.com/aoLwsyQ.png
+https://i.imgur.com/PbG4tFo.png
+
+#### F. CUDA
+
+### 1.3) PJP
 ![image](https://i.imgur.com/uNzoMmV.png) <br />
 ![image](https://i.imgur.com/s9pxcHs.png) <br />
 ![image](https://i.imgur.com/lvMkZNC.png) <br />
@@ -1278,14 +1359,50 @@ TODO fixnout nadpisy všude po docu
 ![image](https://i.imgur.com/nEsEzGy.png) <br />
 ![image](https://i.imgur.com/dpazlOW.png) <br />
 
-### 1.3) Programka (OOP, JAVA, FPR, UPR, SKJ)
+### 1.4) Programka (OOP, JAVA, FPR, UPR, SKJ)
 Možná vztahy na DSka, ALG a jakési PJP, ZDS. Něco malinko z SWI stuff.
+Datový typ je druh hodnoty, které nabývá proměnná, případně konstanta. Určen oborem hodnot a jeho výpočetními operacemi jako spousta jiných matematických konceptů. Není určen jen oborem hodnot, protože existují i datové typy, které se liší jen v prováděných operacích, třeba boolean a integer, kdy máme reprezentace hodnot 0 a 1 v obou, ale nad integerem provádíme aritmetické operace a nad booleanem operace logické. Součástí prog. jazyka je definice zákl. / jednoduchých / elementárních datových typů, z těch můžeme pak dělat i typy složitější. V běžně používaných jazycích nejsou zákl. datové typy parametrizovatelné jak tomu je třeba u  složitějších typů List<Integer> nebo List<String>. Elem. datové typy se mohou lišit mezi jazyky, plus jejich parametry (v tomto kontextu myšlen způsob reprezentace hodnot, jejich rozsah v paměti) záleží na architektuře procesoru, i.e. 32 nebo 64 bit systémy, kde 64 bits jsou schopné držet větší rozsah hodnot pro integery, procesor pracuje s určitou velikostí slov právě o těch bitech, čiže např. 32 bit registry musí rozdělit 64 bit integer na dvě části a práce je pak pomalejší, vyžaduje se více operací a tedy více instrukcí, kdežto 64 bit registry pracují s takovým typem efektivněji, mimo jiné používá velké adresy paměti / má velký adresový prostor, což ale není nutně efektivnější, příkladem jsou void ukazatele, kdy jejich větší velikost, (e.g. 4 vs 8 bajtů) hlavně znamená více zabrané paměti, pomalejší přenos a horší cache efektivita. Stále tedy platí, že na 64 architektuře je short int 16 bit nebo naopak long long je 64 bit, ale v principu jde o to, že třeba standard pro jazyk C/C++ spíš řeší minimální požadavky a vztahy mezi těmi druhy int, u embeds, historických systémů a nebo u těch pointerů může být realný rozdíl v té reprezentaci.
+
+Krátká definice: Abstraktní datový typ je implementačně nezávislá specifikace struktury dat s operacemi povolenými na této struktuře.
+Např. zásobník, halda, fronta, hash table, strom, seznam, množina, zobrazení, string
+![image](https://i.imgur.com/1dIfdwp.png) <br />
+WIP skok APPS CPU
+WIP skok ZDS bit a byte
+WIP predikce skoku APPS a ZDS souvislosti
+
+Datové typy jsou ordinální, když hodnoty těch typů tvoří lineárně uspořádanou množinu, kde pro každý prvek máme definovaného předchůdce a následovníka, z posledního prvku ve většině jazyků dojde k přetečení na první, řadí se sem i výčtový typ, jelikož jde v podstatě o celé čísla pojmenované programátorem.
+ enum barva {
+   piky,
+   srdce,
+   kary,
+   krize
+ };
+ 
+Logická hodnota bývá obvykle výsledkem výrazu s relačními nebo logickými operátory. Místo hodnoty false rozumíme celé číslo 0 a místo true pak můžeme chápat jakékoliv nenulové celé číslo, i záporné, často používáme 1.
+WIP skok na relace
+WIP skok na logiku
+WIP skok na boolean
+
+WIP Int, znak, float, ordinalita a neordinalita je acc v ZDS
+
+Void, specialita, nenabývá žádné hodnoty, ale slouží mimo jiné pro deklaraci funkcí, které nemají návratovou hodnotu, případně pro již zmíněné označení dat nespecifikovaného typu, tedy pointer. Ten ukazuje na místo v paměti, čiže na proměnnou nebo na určitý prvek pole.
+
+V některých jazycích existuje rovněž prázdná hodnota ošetřující neplatný výsledek – null nebo nil, která je vlastně současně zvláštním datovým typem. Výsledkem většiny operací s konstantou nil je opět nil, takže chování programu je deterministické. Konstanta NULL vyskytující se v jazyce C tento význam nemá, při jejím nevhodném zpracování může snadno dojít k nepředvídatelnému chování programu, které při nedokonalém operačním systému může vést až ke zhroucení počítače.
+WIP skok na UTI
+
+https://i.imgur.com/X6Wc9at.png
+https://i.imgur.com/I0fxrh5.png
+
+Generický datový typ zastupuje více datových typů, jde o způsob parametrizace.
+
+Složené datové typy:
+Pole, String, Seznam / List, Struct, či záznam / record.
 
 * Public declaration is accessible to all clients.
 * Protected declaration is accessible only to the class itself and its subclasses.
 * Private declaration is accessible only to the class itself.
 
-### 1.4) ALG
+### 1.5) ALG
 Proč studovat algoritmy?
 * Profesionální vývojář/informatik by měl znát standardní algoritmy pro řešení základních problémů, měl by umět navrhovat nové algoritmy a analyzovat efektivitu algoritmů.
 * Algoritmy vedou k rozvoji analytického myšlení – jde o nalezení přesného a formálního postupu jak problém řešit.
@@ -1625,7 +1742,7 @@ TODO chybí Strategie řešení iterativním zlepšováním DALE 8 images <br />
 TODO KONEC chybí Meze možností algoritmického řešení problémů. P, NP a NP-úplné problémy.chybí Zdolávání mezí možností algoritmického řešení problémů <br />
 WIP skoky mezi UTI a jinýma tu budou <br />
 
-### 1.5) ZSU
+### 1.6) ZSU
 Machine Learning:
 * Processes data from different sources.
 * Predicts events based on models, looks for connections, sets probabilities for different events.
@@ -2141,7 +2258,7 @@ Data Transformation- Projection <br />
 ![image](https://hackmd.io/_uploads/ry7ZhuXlfl.png) <br />
 ![image](https://hackmd.io/_uploads/SJuZh_QlGl.png) <br />
 
-### 1.6) Sítě
+### 1.7) Sítě
 WIP JUMP na ZDS <br />
 * Simplex, signál jedním směrem, např. TV broadcast
 * Half duplex, signál v obou směrech, ale jen one at a time, 2 way rádio, nebo Ethernet stanice propojené přes hub
@@ -2502,7 +2619,7 @@ Sending Window maintains the frames that were transmitted but not yet acknowledg
 ![image](https://hackmd.io/_uploads/BJQfw71eGe.png) <br />
 WIP
 
-### 1.7) Databáze
+### 1.8) Databáze
 ##### DB_START
 DB systémy neboli Systémy pro Řízení Báze Dat - SŘBD jsou: <br />
 * masivní
@@ -3125,7 +3242,7 @@ WIP skok na programko java a csharp <br />
 ![image](https://hackmd.io/_uploads/S10pkmJezx.png) <br />
 ![image](https://hackmd.io/_uploads/Byr0yXkeMx.png) <br />
 
-### 1.8) SWI čistě
+### 1.9) SWI čistě
 Tady jsou na jistotu pouze věci z předmětů SWI a VIS, zlinkované pretty much jen na části textu, které se zabývají OOPečkem, nebo ukazují vzory. Referuju hodně na mou reálnou praxi.
 
 #### Co je SWI, modely, ULM a UC, objetky, doména
@@ -3472,7 +3589,7 @@ Verifikace neboli ověření a validace neboli potvrzení zahrnují statické (m
 
 TODO asi lépe popsat verifikace vs validace pokud to není jinde?
 
-### 1.9) URO a ZPG
+### 1.99 hah sike) URO a ZPG
 Nepohoda či unava pro usera, kterou si sám ani neuvědomí kolikrát. Některá rozhrání vyhovují lidem více a jiná méně, neobjektivnější jsou výzkumy studující zákonitosti lidského vnímání. <br />
 ![image](https://hackmd.io/_uploads/Skco9H7lMe.png) <br />
 ![image](https://hackmd.io/_uploads/Hk5wYr7eGg.png) <br />
